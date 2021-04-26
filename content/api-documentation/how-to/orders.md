@@ -4,7 +4,7 @@ weight: 10
 ---
 
 This page contains examples of some of the things you can do with order objects through our API. For additional help
-understanding different types of orders and how they behave once they're placed, please see the [order page]({{< relref "/trading-on-financefeast/orders.md" >}})
+understanding different types of orders and how they behave once they're placed
 
 ---
 

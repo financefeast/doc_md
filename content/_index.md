@@ -19,7 +19,7 @@ With a free Financefeast account you can start interacting with stock market dat
 
 ## Read through the Web API Documentation
 
-Learn how API works by read through our [Web API document]({{< relref "/api-documentation/api_v1/_index.md" >}}). It
+Learn how API works by read through our [Web API document]({{< relref "/api-documentation/api-v1/_index.md" >}}). It
 describes how our API works in detail.
 
 You can also learn about [SDK for your language]({{< relref "/api-documentation/client-sdk/_index.md" >}}). Choose
