@@ -1,0 +1,35 @@
+using financefeast.Markets;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace CodeExamples
+{
+    internal static class Example
+    {
+        private static string API_KEY = "your_api_key";
+
+        private static string API_SECRET = "your_secret_key";
+
+        public static async Task Main(string[] args)
+        {
+            // First, open the API connection
+            var client = financefeast.Markets.Environments.Paper
+                .GetfinancefeastTradingClient(new SecretKey(API_KEY, API_SECRET));
+
+            // Get our position in AAPL.
+            var aaplPosition = await client.GetPositionAsync("AAPL");
+
+            // Get a list of all of our positions.
+            var positions = await client.ListPositionsAsync();
+
+            // Print the quantity of shares for each position.
+            foreach (var position in positions)
+            {
+                Console.WriteLine($"{position.Quantity} shares of {position.Symbol}.");
+            }
+
+            Console.Read();
+        }
+    }
+}

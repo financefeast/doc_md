@@ -1,0 +1,13 @@
+---
+title: Get Started With Financefeast
+weight: 40
+---
+
+# Get Started With Financefeast
+
+The following is a list of working examples built by Financefeast. You can copy them as-is and should immediately get data to visualize.
+
+[//]: # (**[Testing the API with Postman]({{< relref "/get-started-with-financefeast/testing-with-postman.md" >}})**)
+
+
+Also, you can always go back to a list of [How-To Code Examples](https://doc.financefeast.io/api-documentation/how-to/) where you’ll find examples of how to do specific tasks using the Financefeast API in supported programming languages.

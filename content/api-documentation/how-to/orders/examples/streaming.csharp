@@ -1,0 +1,35 @@
+using financefeast.Markets;
+using System;
+using System.Threading.Tasks;
+
+namespace CodeExamples
+{
+    internal static class Example
+    {
+        private static string API_KEY = "your_api_key";
+
+        private static string API_SECRET = "your_secret_key";
+
+        // Print a message to the console when the account's status changes.
+        public static async Task Main(string[] args)
+        {
+            // Prepare the websocket connection and subscribe to trade_updates.
+            var financefeastStreamingClient = Environments.Paper
+                .GetfinancefeastStreamingClient(new SecretKey(API_KEY, API_SECRET));
+
+            await financefeastStreamingClient.ConnectAndAuthenticateAsync();
+            financefeastStreamingClient.OnTradeUpdate += HandleTradeUpdate;
+
+            Console.Read();
+        }
+
+        // Handle incoming trade updates.
+        private static void HandleTradeUpdate(ITradeUpdate update)
+        {
+            if (update.Order.ClientOrderId.Equals("my_client_order_id"))
+            {
+                Console.WriteLine($"Update for {update.Order.ClientOrderId}. Event: {update.Event}");
+            }
+        }
+    }
+}

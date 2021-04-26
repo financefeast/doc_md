@@ -1,0 +1,34 @@
+using financefeast.Markets;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace CodeExamples
+{
+    internal static class Example
+    {
+        private static string API_KEY = "your_api_key";
+
+        private static string API_SECRET = "your_secret_key";
+
+        public static async Task Main(string[] args)
+        {
+            // First, open the API connection
+            var client = financefeast.Markets.Environments.Paper
+                .GetfinancefeastTradingClient(new SecretKey(API_KEY, API_SECRET));
+
+            // Get the last 100 of our closed orders
+            var closedOrders = await client.ListOrdersAsync(
+                new ListOrdersRequest
+                {
+                    LimitOrderNumber = 100,
+                    OrderStatusFilter = OrderStatusFilter.Closed
+                });
+
+            // Get only the closed orders for a particular stock
+            var aaplOrders = closedOrders.Where(order => order.Symbol.Equals("AAPL"));
+
+            Console.Read();
+        }
+    }
+}

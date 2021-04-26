@@ -1,0 +1,41 @@
+using financefeast.Markets;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace CodeExamples
+{
+    internal static class Example
+    {
+        private static string API_KEY = "your_api_key";
+
+        private static string API_SECRET = "your_secret_key";
+
+        public static async Task Main(string[] args)
+        {
+            // First, open the API connection
+            var client = financefeast.Markets.Environments.Paper
+                .GetfinancefeastTradingClient(new SecretKey(API_KEY, API_SECRET));
+
+            // Check if the market is open now.
+            var clock = await client.GetClockAsync();
+            if (clock.IsOpen)
+            {
+                Console.WriteLine("The market is open.");
+            }
+            else
+            {
+                Console.WriteLine("The market is closed.");
+            }
+
+            // Check when the market was open on Dec. 1, 2018
+            var date = new DateTime(2018, 12, 1);
+            var calendars = await client.ListCalendarAsync(
+                new CalendarRequest().SetInclusiveTimeInterval(date, date));
+            var calendarDay = calendars.First();
+            Console.WriteLine($"The market opened at {calendarDay.TradingOpenTimeUtc} and closed at {calendarDay.TradingCloseTimeUtc} on {date}.");
+
+            Console.Read();
+        }
+    }
+}

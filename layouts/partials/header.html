@@ -1,0 +1,47 @@
+<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="hide-sm-only">
+      <div class="title hide-sm-only">
+        <a href="https://doc.financefeat.io/"><img src="{{ "images/ff_logo.png" | absURL }}" class="financefeast-docs-subtitle-image" alt="Financefeast Documentation" /></a>
+      </div>
+    </div>
+
+    <!-- <div class="button button-nowrap hide-sm-only-table-cell show-md-table-cell" role="button" aria-label="Community and Support">
+      <a href="/community" class="link-key link-key-community hide-sm-only">Community</a>
+    </div> -->
+
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+
+    <div class="button button-nowrap hide-sm-only-table-cell show-md-table-cell" role="button" aria-label="Log in">
+      <a href="https://identity.financefeast.io/login" target="_blank" class="link-key link-key-community hide-sm-only">Log in</a>
+    </div>
+
+    <div class="button button-key" role="button" aria-label="API Key">
+      <a href="https://identity.financefeast.io/signup" target="_blank" class="toggle-button cta-button-key">Get API key</a>
+    </div>
+  </div> <!-- end nav items -->
+
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <form action="{{ "search/" | absURL }}">
+          <input id="search-query" name="s" class="query" type="text" placeholder="Search" autocapitalize="off"
+            autocorrect="off" autocomplete="off" spellcheck>
+        </form>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
