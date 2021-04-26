@@ -22,32 +22,18 @@ to begin writing your own algo!
 Every private API call requires key-based authentication. API keys can
 be acquired in the developer web console.  The client must provide a pair of API
 key ID and secret key in the HTTP request headers named
-`APCA-API-KEY-ID` and `APCA-API-SECRET-KEY` respectively.
+`FF-CLIENT-ID` and `FF-SECRET-ID` respectively.
 
 Here is an example using curl showing how to authenticate with the API.
 
 ```
 curl -X GET \
-    -H "APCA-API-KEY-ID: {YOUR_API_KEY_ID}" \
-    -H "APCA-API-SECRET-KEY: {YOUR_API_SECRET_KEY}"\
+    -H "FF-CLIENT-ID: {YOUR_API_KEY_ID}" \
+    -H "FF-SECRET-ID: {YOUR_API_SECRET_KEY}"\
     https://{apiserver_domain}/v2/account
 ```
 
-financefeast's live API domain is `api.financefeast.markets`.
-
-## Paper Trading
-financefeast's paper trading service uses a different domain and different credentials from
-the live API. You'll need to connect to the right domain so that you don't
-run your paper trading algo on your live account.
-
-To use the paper trading api, set `APCA-API-KEY-ID` and
-`APCA-API-SECRET-KEY` to your paper credentials, and set the domain to `paper-api.financefeast.markets`.
-
-After you have tested your algo in the paper environment and are ready to start running your algo in the live
-environment, you can switch the domain to the live domain, and the credentials to your
-live credentials. Your algo will then start trading with real money.
-
-To learn more about paper trading, visit the [paper trading page]({{< relref "/trading-on-financefeast/paper-trading.md" >}}).
+financefeast's live API domain is `api.financefeast.io`.
 
 ## Rate Limit
 There is a rate limit for the API requests.  When it is exceeded, the API
@@ -100,43 +86,7 @@ form of UUID v4. When the API accepts `symbols` to specify more than one
 symbol in one API call, the general rule is to use commas (,) to separate
 them.
 
-All of four symbol forms are case-sensitve.
+All of four symbol forms are case-insensitive.
 
-## v2 Release Notes
-
-* Updated Account and Assets entities with new fields for short selling and margin trading
-* Orders that encounter account permissioning, insufficient buying power, or lack of available borrow will return
-a 403 “forbidden” error with an existing or new log message describing the reject.
-* The endpoint host name will be the same as v1 (api.financefeast.markets/paper-api.financefeast.markets) but with different path (“/v2”).
-* API key between v1 and v2 are interchangeable.
-* Updated Python SDK for API v2.0 support, example usage:
-  `api = tradeapi.REST('<key_id>', '<secret_key>', api_version=’v2’)`
-
-## Notes on Orders and Positions
-* If your account is set to `shorting_enabled: false`, any attempt to place a sell order in a stock that you have no
-position or with a quantity that exceeds your current position will result in a 403 `Forbidden` error.
-In the future, users who are approved for shorting will be able to set the shorting_enabled flag in their dashboard.
-This will extend to the creation of sub-accounts and help ensure strategies that are not supposed to short are never
-allowed to accidentally short.
-* For accounts with `shorting_enabled: true`, if you place a sell order for an asset on which you are flat, or
-one that you have a short position in, it will be treated as a short sell. There are no new “side” parameters
-added for short selling or short covering. The existing values of “sell” and “buy” will be used, respectively.
-* At this time, you are only allowed to short easy-to-borrow assets. Assets that are easy to borrow are marked
-with `easy_to_borrow: true`. A short sell order will be rejected with a 403 `Forbidden` status if the asset being
-sold is hard to borrow or not shortable at all.
-* At this time, an order that would flip your position in that stock from long to short or short to long is not
-supported and will return a 403 `Forbidden` error. Your position must first be <= 0 for shorts and must first
-be >= 0 for longs. In the future, we plan to support selling (buying) beyond an existing long (short) position
-directly into a short (long) position.
-* At this time, if you have no position in a stock, but you have a pending short sell (buy) order, you will not
-be permitted to submit a buy (sell) order. The order will return a 403 `Forbidden` error.
-* In order to allow the use of margin, the /orders endpoint will use the `buying_power` field to determine whether
-an account has enough buying power to buy/short a security. The exception to this rule is that assets marked
-with `marginable:false` cannot use margin lending to purchase the asset.
-* Market buy orders that would increase your position (e.g. buy order for a stock where your position in that stock is >= 0)
-are converted to marketable limit orders with a 2.5% to 4% price collar.
-* Market sell orders that would increase your position (e.g. sell order for a stock when your position in that stock is <= 0)
-are NOT converted but are subject to a pre-trade buying power risk check of 102.5 to 104% of the order value.
-* Short positions will be reported with negative quantities and negative market values.
 
 # API Endpoints

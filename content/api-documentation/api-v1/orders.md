@@ -14,8 +14,6 @@ the status. Updates on open orders at financefeast will also be sent over the
 streaming interface, which is the recommended method of maintaining order
 state.
 
-For further details on order functionality, please see the [Trading On financefeast - Orders page]({{< ref path="/trading-on-financefeast/orders" >}}).
-
 Please note that body parameters should be passed using a **JSON encoded body**.
 
 {{< rest-endpoint resource="orders" method="GET" path="/v2/orders" >}}
