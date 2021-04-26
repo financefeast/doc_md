@@ -1,5 +1,5 @@
 ---
-title: API v2
+title: API v1
 weight: 10
 ---
 # API v2

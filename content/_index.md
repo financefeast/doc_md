@@ -11,7 +11,7 @@ outputs:
 
 If you need help in getting started, [check out our examples and tutorials](/get-started-with-financefeast).
 
-## Sign Up and Start Analysing!
+## Sign Up and Start Tracking Stocks!
 
 With a free Financefeast account you can start interacting with stock market data.
 
@@ -27,4 +27,4 @@ one of the supported ones and start building your idea.
 
 ## Run Examples
 
-We have plenty of python examples to get you started.
+We have plenty of python examples to get you started coded in python. From simple Google Colab or Postman scripts, to more advanced.
