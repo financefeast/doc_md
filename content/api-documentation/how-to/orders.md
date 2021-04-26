@@ -26,14 +26,12 @@ Client Order IDs can be used to organize and track specific orders in your clien
 ## Submit Bracket Orders
 Bracket orders allow you to create a chain of orders that react to execution
  and stock price.
-For more details, go to [Bracket Order Overview]({{< relref"/trading-on-financefeast/orders.md#bracket-orders" >}})
 
 {{< code-example exampleId="placeBracketOrder" pathURL="/api-documentation/how-to/orders/examples">}}
 
 ## Submit Trailing Stop Orders
 Trailing stop orders allow you to create a stop order that automatically changes the stop price allowing 
 you to maximize your profits while still protecting your position with a stop price.
-For more details, go to [Trailing Stop Order Overview]({{< relref"/trading-on-financefeast/orders.md#trailing-stop-orders" >}})
 
 {{< code-example exampleId="placeTrailingStopOrder" pathURL="/api-documentation/how-to/orders/examples">}}
 
