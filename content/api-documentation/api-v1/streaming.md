@@ -129,7 +129,7 @@ data payload will include the list of streams the client is currently listening 
 ```
 
 The fields present in a message sent over the `trade_updates` stream depend on the type of event they are communicating. All messages
-contain an `event` type and an `order` field, which is the same as the [order object](https://docs.financefeast.markets/api-documentation/api-v2/orders/#properties) that is returned from the REST API.
+contain an `event` type and an `order` field, which is the same as the [order object](https://docs.financefeast.markets/api-documentation/api-v1/orders/#properties) that is returned from the REST API.
 Potential event types and additional fields that will be in their messages are listed below.
 
 ### Common events:

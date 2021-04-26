@@ -16,7 +16,7 @@ data sources from a single exchange.
 
 
 ## Authentication
-The authentication is done the same way as [Trading API]({{< relref "/api-documentation/api-v2/_index.md#authentication" >}}),
+The authentication is done the same way as [Trading API]({{< relref "/api-documentation/api-v1/_index.md#authentication" >}}),
 and make sure you set the following fields in the HTTP header:
 
 - `APCA-API-KEY-ID`
@@ -38,7 +38,7 @@ This URL is the same between paper trading and live trading.
 financefeast Data API provides websocket streaming for trades,
 quotes and minute bars with the same API key. For the details about
 the streaming, please see [the reference page]({{<
- relref "/api-documentation/api-v2/market-data/financefeast-data-api-v1/streaming.md" >}})
+ relref "/api-documentation/api-v1/market-data/financefeast-data-api-v1/streaming.md" >}})
 
 
 ### Can I get the full volume data from financefeast?

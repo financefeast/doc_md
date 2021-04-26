@@ -9,7 +9,7 @@ understanding different types of orders and how they behave once they're placed,
 ---
 
 ## Place New Orders
-Orders can be placed with a POST request to our [/v2/orders]({{< relref "/api-documentation/api-v2/orders.md#request-a-new-order" >}}) endpoint.
+Orders can be placed with a POST request to our [/v2/orders]({{< relref "/api-documentation/api-v1/orders.md#request-a-new-order" >}}) endpoint.
 
 {{< code-example exampleId="placeOrder" pathURL="/api-documentation/how-to/orders/examples" >}}
 
@@ -38,11 +38,11 @@ For more details, go to [Trailing Stop Order Overview]({{< relref"/trading-on-fi
 {{< code-example exampleId="placeTrailingStopOrder" pathURL="/api-documentation/how-to/orders/examples">}}
 
 ## Get a List of Existing Orders
-If you'd like to see a list of your existing orders, you can send a get request to our [/v2/orders]({{< relref "/api-documentation/api-v2/orders.md#get-a-list-of-orders" >}}) endpoint.
+If you'd like to see a list of your existing orders, you can send a get request to our [/v2/orders]({{< relref "/api-documentation/api-v1/orders.md#get-a-list-of-orders" >}}) endpoint.
 
 {{< code-example exampleId="getOrders" pathURL="/api-documentation/how-to/orders/examples">}}
 
 ## Listen for Updates to Orders
-You can use Websockets to receive real-time updates about the status of your orders as they change. You can see the full documentation [here]({{< relref "/api-documentation/api-v2/streaming.md#order-updates" >}}).
+You can use Websockets to receive real-time updates about the status of your orders as they change. You can see the full documentation [here]({{< relref "/api-documentation/api-v1/streaming.md#order-updates" >}}).
 
 {{< code-example exampleId="streaming" pathURL="/api-documentation/how-to/orders/examples">}}
