@@ -7,5 +7,5 @@ weight: 20
 Protected endpoints, such as EOD or Intraday require authorization. To authorize to a protected endpoint supply an 'Authorization' 
 http header with your http request.
 
-{{< code-example exampleId="accountInfo" pathURL="/api-documentation/how-to/authorization/examples">}}
+{{< code-example exampleId="authorization" pathURL="/api-documentation/how-to/authorization/examples">}}
 

@@ -9,5 +9,5 @@ you receive an authorization token which is required to be passed to protected e
 
 You can get your client credentials [here]('https://customer.financefeast.io')
 
-{{< code-example exampleId="accountInfo" pathURL="/api-documentation/how-to/authentication/examples">}}
+{{< code-example exampleId="authentication" pathURL="/api-documentation/how-to/authentication/examples">}}
 
