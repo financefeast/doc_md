@@ -1,0 +1,33 @@
+endpoints:
+  /data/intraday
+    GET:
+      title: Get Intraday stock price data
+      summary: |
+        Returns stock price data for the last price of the trading day for open, high, low, close and volumne price points.
+      params:
+        url:
+          - name: ticker
+            type: string
+            required: true
+            desc: stock ticker
+          - name: datetime_from
+            type: string
+            required: false
+            desc: a date string in YYY-MM-DD 00:00:00 format as start of date range
+          - name: datetime_to
+            type: string
+            required: false
+            desc: a date string in YYY-MM-DD 00:00:00 format as endof date range
+          - name: exchange
+            type: string
+            required: false
+            desc: exchange that the stock ticker if a member of
+          - name: interval
+            type: interger
+            required: false
+            desc: time interval for data points
+      returns: |
+        [CoreDataIntraday(#coredataintraday-entity) object
+      errors:
+        - status: 404
+          reason: the ticker is not found

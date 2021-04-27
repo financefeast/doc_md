@@ -2,45 +2,50 @@
 title: API v1
 weight: 10
 ---
-# API v2
-financefeast is a modern platform for algorithmic trading.  financefeast's
-API is the interface for your trading algo to communicate with financefeast's brokerage
-service.
+# API v1
+Financefeast is a modern platform to obtain stock market data using a simple HTTP based API.  Financefeast's
+API allows easy retrieval of 20 minute delayed and real-time price and fundamentals from multiple exchanges.
 
-The API allows your trading algo to access real-time price, fundamentals,
-place orders and manage your portfolio, in either REST (pull) or streaming
-(push) style.
-
-In order to start trading with financefeast API, please sign up
-[here](https://financefeast.markets/).
+In order to start data retrieval with financefeast API, please sign up
+[here](https://identity.financefeast.io/account/signup).
 
 Once you have signed up and have familiarized yourself with our API, please
-check out our [python client](https://github.com/financefeasthq/financefeast-trade-api-python)
-to begin writing your own algo!
+check out our [python client](https://github.com/financefeast/python_client)
+to begin writing your own data visualization and processing application!
 
-## Authentication
-Every private API call requires key-based authentication. API keys can
-be acquired in the developer web console.  The client must provide a pair of API
-key ID and secret key in the HTTP request headers named
-`FF-CLIENT-ID` and `FF-SECRET-ID` respectively.
+## Authorization and Authentication
 
-Here is an example using curl showing how to authenticate with the API.
+Financefeast API uses the oauth2 authorization protocol and requires an initial authorization step to receive an authorization code. 
+The authorization code is then presented to all protected endpoints, such as <code>Core Data</code> endpoints and is then authorized. 
+If the authorization code is valid access is granted, otherwise a 401 Unauthorized error is returned.
 
-```
-curl -X GET \
-    -H "FF-CLIENT-ID: {YOUR_API_KEY_ID}" \
-    -H "FF-SECRET-ID: {YOUR_API_SECRET_KEY}"\
-    https://{apiserver_domain}/v2/account
-```
+Oauth2 authorization protocol allows flexibility to developers writing applications that consume the Financefeast API. 
+With oauth2 we can authorize customers in your behalf to access the API using their credentials which opens up many possibilities. 
+Get in touch or read our guides on how you can develop your own Web application that uses oauth2 to authorize Finacefeast customers.
 
-financefeast's live API domain is `api.financefeast.io`.
+### To Authenticate and Get an Authorization Code
+
+First make a note of your client id and client secret. These can be found [here](https://customer.financefeast.io). 
+
+{{< relref "/api-v1/authentication.md" >}}
+
+### To Authorize to Protected Endpoints
+
+To authorize to protected endpoints such as Core Data: End of Day or Intraday you will need to present an Authorization header with your authorization code . 
+Calling a protected endpoint without providing a valid Authorization header will return a 401 Unauthorized error.
+
+{{< relref "/api-v1/authorization.md" >}}
+
+## Domains
+Financefeast's live API domain is `api.financefeast.io`.
 
 ## Rate Limit
 There is a rate limit for the API requests.  When it is exceeded, the API
-server returns error response with HTTP status code 429.  **The rate limit is
-200 requests every minute per API key.**
+server returns error response with HTTP status code 429.  **The rate limit varies depending on the
+subscription plan you are on.**
 
 ## General Rules
+
 ### Time Format and Time Zone
 All date time type inputs and outputs are serialized according to
 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)
@@ -49,9 +54,8 @@ communication does not assume a particular time zone, and this date time
 serialization denominates the time offset of each value.
 
 ### Numbers
-Decimal numbers are returned as strings to preserve full precision across
-platforms. When making a request, it is recommended that you also convert
-your numbers to strings to avoid truncation and precision errors.
+Decimal numbers are returned as floats or integers depending on the parameter. When sending interger or float values
+to Financefeast API you can use strings or the primitive type.
 
 ### IDs
 Object ID in financefeast system uses UUID v4.  When making requests, the format
@@ -60,33 +64,3 @@ with dashes is accepted.
 ```
 904837e3-3b76-47ec-b432-046db621571b
 ```
-
-### Assets and Symbology
-An asset in this API is a tradable or non-tradable financial instrument.
-financefeast maintains our own asset database and assigns an internal
-ID for each asset which you can use to identify assets to specify in API
-calls.  Assets are also identified by a combination of symbol, exchange,
-and asset class.  The symbol of an asset may change over the time, but
-the symbol for an asset is always the one at the time API call is made.
-
-When the API accepts a parameter named `symbol`, you can use one of the
-following four different forms unless noted otherwise.
-
-    - "{symbol}"
-    - "{symbol}:{exchange}"
-    - "{symbol}:{exchange}:{asset_class}"
-    - "{asset_id}"
-
-Typically the first form is enough, but in the case multiple assets are
-found with a symbol (the same symbol may be used in different exchanges or
-asset classes), the most commonly-used asset is assumed. To avoid
-the ambiguity, you can use the second or third form with suffixes joined
-by colons (:)   Alternatively, `asset_id` is guaranteed as unique, in the
-form of UUID v4. When the API accepts `symbols` to specify more than one
-symbol in one API call, the general rule is to use commas (,) to separate
-them.
-
-All of four symbol forms are case-insensitive.
-
-
-# API Endpoints
