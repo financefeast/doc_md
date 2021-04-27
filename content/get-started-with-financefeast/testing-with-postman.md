@@ -8,13 +8,18 @@ description: How to test the Financefeast API without coding.
 Want to get stock data with Financefeast, but you aren’t fully sure how the Financefeast API works yet? Here’s a step by step tutorial on testing the Financefeast API by manually using the Postman interface.
 
 ## This tutorial explains how to:
-* Get the Financefeast postman collection
+* Install Postman
+* Get our Financefeast postman collection
 * Find your API client credentials
 * Configure the Postman collection
 * Authenticate to the Financefeast API  
 * Get stock data through API
 
-### Get the Postman Collection
+### Install Postman
+If you don't already have Postman installed, [Get it here](https://app.getpostman.com/app/download/win64).
+We recommend the stand alone version of Postman, rather than the Chrome browser plugin due to its age.
+
+### Get our Postman Collection
 [Available on Github](https://github.com/financefeast/postman_collections)
 
 ```commandline
@@ -27,8 +32,12 @@ git clone https://github.com/financefeast/postman_collections.git
 Copy your client id and client secret. You will need to enter these into environment variables in the postman collection
 
 ### Configure Postman
-Under "Environments", select "Test" and you should see a list of variables. 
+Under "Environments", select "Prod" and you should see a list of variables. 
 Enter your client id into CLIENT_ID and your client secret into CLIENT_SECRET.
+
+{{< safe-html >}}
+<center><img src="./environment.png" width="80%"></center>
+{{< /safe-html >}}
 
 ### Authenticate
 Under "Collections", run "Login" which will attempt to authenticate your client credentials. 
