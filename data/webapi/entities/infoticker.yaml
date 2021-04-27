@@ -1,0 +1,60 @@
+spec:
+  - name: hits
+    type: integer
+    desc: |
+      Number of records returned
+  - name: took_ms
+    type: integer
+    desc: |
+      Number of milliseconds in server processing time
+  - name: data
+    type: list
+    desc: |
+      A list of price records in OHLC format-
+  - name: symbol
+    type: string
+    desc: |
+      A stock ticker
+  - name: name
+    type: string
+    desc: |
+      Company name for stock
+  - name: exchange
+    type: string
+    desc: |
+      Exchange stock ticker is member of
+  - name: industry
+    type: string
+    desc: |
+      The type of industry the company is in
+  - name: date_to
+    type: string
+    desc: |
+      Date range end
+example: |
+  {
+    "hits": 103,
+    "took_ms": 0,
+    "data": [
+      {
+        "symbol": "WBC.NZ",
+        "name": "Westpac Bkg Corp",
+        "industry": "Finance"
+      },
+      {
+        "symbol": "ANZ.NZ",
+        "name": "Aust & Nz Bank Grp",
+        "industry": "Finance"
+      },
+      {
+        "symbol": "TLS.NZ",
+        "name": "Telstra Corp Ltd",
+        "industry": "Communications"
+      },
+      {
+        "symbol": "FPH.NZ",
+        "name": "Fisher & Paykel He",
+        "industry": "Health Technology"
+      }
+    ]
+  }

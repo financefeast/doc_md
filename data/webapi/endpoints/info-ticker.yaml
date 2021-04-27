@@ -1,0 +1,18 @@
+endpoints:
+  /info/ticker
+    GET:
+      title: Get a list of tickers
+      summary: |
+        Returns a list of supported tickers
+      params:
+        query:
+          - name: exchange
+            type: string
+            required: false
+            desc: exchange to return tickers for
+
+      returns: |
+        [Ticker](#infoticker-entity) object
+      errors:
+        - status: 404
+          reason: the exchange is not found
