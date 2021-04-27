@@ -45,24 +45,6 @@ example: |
         "name": "Westpac Bkg Corp",
         "industry": "Finance",
         "uuid": "2bc695f5-778e-4fa6-bd8a-f0632d341dc0"
-      },
-      {
-        "symbol": "ANZ.NZ",
-        "name": "Aust & Nz Bank Grp",
-        "industry": "Finance",
-        "uuid": "6gc695f5-778e-7fa6-nd8a-f0242d341dc0"
-      },
-      {
-        "symbol": "TLS.NZ",
-        "name": "Telstra Corp Ltd",
-        "industry": "Communications",
-        "uuid": "2pc6n35-791e-0fa2-nd8a-k024vm37zq9c0"
-      },
-      {
-        "symbol": "FPH.NZ",
-        "name": "Fisher & Paykel He",
-        "industry": "Health Technology",
-        "uuid": "1bc695u5-168e-4fa6-bd8a-a0632d941dc2"
       }
     ]
   }

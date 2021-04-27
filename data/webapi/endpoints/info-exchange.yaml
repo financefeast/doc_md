@@ -1,0 +1,9 @@
+endpoints:
+  /info/exchange
+    GET:
+      title: Get a list of exchanges
+      summary: |
+        Returns a list of supported exchanges
+
+      returns: |
+        [Exchange](#infoexchange-entity) object

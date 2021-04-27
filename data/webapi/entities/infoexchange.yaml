@@ -1,0 +1,42 @@
+spec:
+  - name: hits
+    type: integer
+    desc: |
+      Number of records returned
+  - name: took_ms
+    type: integer
+    desc: |
+      Number of milliseconds in server processing time
+  - name: data
+    type: list
+    desc: |
+      A list of price records in OHLC format-
+  - name: symbol
+    type: string
+    desc: |
+      A exchange symbol
+  - name: name
+    type: string
+    desc: |
+      Exchange name
+  - name: timezone
+    type: string
+    desc: |
+      Timezone code that the exchange is in
+  - name: uuid
+    type: string
+    desc: |
+      Uuid4 unique string
+example: |
+    {
+      "hits": 103,
+      "took_ms": 0,
+      "data": [
+        {
+          "symbol": "nzx",
+          "name": "New Zealand Stock Exchange",
+          "timezone": "NZST",
+          "uuid": "2bc695f5-778e-4fa6-bd8a-f0632d341dc0"
+        }
+      ]
+    }

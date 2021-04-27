@@ -9,5 +9,5 @@ will get intraday price data for the ticker requested. Prices are updated at lea
 subscription plan they maybe delayed by 20 minutes. [Check your subscription plan](https://customer.financefeast.io/#sub) for
 details.
 
-{{< code-example exampleId="eod" pathURL="/api-documentation/how-to/coredata-intraday/examples">}}
+{{< code-example exampleId="coredata-intraday" pathURL="/api-documentation/how-to/coredata-intraday/examples">}}
 

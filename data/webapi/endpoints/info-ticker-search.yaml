@@ -1,0 +1,23 @@
+endpoints:
+  /info/ticker/{string}
+    GET:
+      title: Get a list of tickers based on a search string
+      summary: |
+        Returns a list of tickers
+      params:
+        path:
+          - name: string
+            type: string
+            required: true
+            desc: ticker and/or company name to search for
+        query:
+          - name: exchange
+            type: string
+            required: false
+            desc: exchange to return tickers for
+
+      returns: |
+        [Ticker](#infotickersearch-entity) object
+      errors:
+        - status: 404
+          reason: the exchange is not found, or the search string is not found

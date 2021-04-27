@@ -8,5 +8,5 @@ By sending a GET request to our [`/data/eod`]({{< relref "/api-documentation/api
 will get end of day price data for the ticker requested. The latest price is updated intraday so if you specify 'todays'
 date you will get the latest price available. Historical dates will return the closing price.
 
-{{< code-example exampleId="eod" pathURL="/api-documentation/how-to/coredata-eod/examples">}}
+{{< code-example exampleId="coredata-eod" pathURL="/api-documentation/how-to/coredata-eod/examples">}}
 
