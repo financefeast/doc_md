@@ -1,6 +1,6 @@
 ---
 title: Ticker Search
-weight: 60
+weight: 70
 ---
 
 The Ticker Search endpoint returns a list of available tickers based on a search string.

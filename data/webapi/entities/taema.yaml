@@ -1,0 +1,81 @@
+spec:
+  - name: ticker
+    type: string
+    desc: |
+      A stock ticker
+  - name: company_name
+    type: string
+    desc: |
+      Company name for stock
+  - name: exchange
+    type: string
+    desc: |
+      Exchange stock ticker is member of
+  - name: date_from
+    type: string
+    desc: |
+      Date range start
+  - name: date_to
+    type: string
+    desc: |
+      Date range end
+  - name: interval
+    type: string
+    desc: |
+      Time interval for data points.
+  - name: hits
+    type: integer
+    desc: |
+      Number of records returned
+  - name: took_ms
+    type: integer
+    desc: |
+      Number of milliseconds in server processing time
+  - name: data
+    type: list
+    desc: |
+      A list of price records in OHLC format
+  - name: ema_{window}
+    type: float
+    desc: |
+      The exponential moving average
+example: |
+  {
+    "ticker": "air.nz",
+    "company_name": "Air New Zealand",
+    "exchange": "nzx",
+    "date_from": "2021-02-24 00:00:00",
+    "date_to": "2021-02-25 09:46:14.332140",
+    "interval": "0:15:00",
+    "hits": 3,
+    "took_ms": 2,
+    "data": [
+      {
+        "timestamp": 1609804800,
+        "close": 1.79,
+        "open": 1.8,
+        "high": 1.8,
+        "low": 1.785,
+        "volume": 291549,
+        "ema_30": 1.8
+      },
+      {
+        "timestamp": 1609891200,
+        "close": 1.785,
+        "open": 1.78,
+        "high": 1.79,
+        "low": 1.77,
+        "volume": 116639,
+        "ema_30": 1.7993548387096776
+      },
+      {
+        "timestamp": 1609977600,
+        "close": 1.81,
+        "open": 1.79,
+        "high": 1.815,
+        "low": 1.79,
+        "volume": 288163,
+        "ema_30": 1.8003642039542147
+      }
+    ]
+  }

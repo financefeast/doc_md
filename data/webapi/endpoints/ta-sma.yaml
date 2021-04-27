@@ -1,0 +1,37 @@
+endpoints:
+  /ta/sm-ma
+    GET:
+      title: Get a Simple Moving Average
+      summary: |
+        Returns price data with a simple moving average
+      params:
+        query:
+          - name: ticker
+            type: string
+            required: true
+            desc: stock ticker
+          - name: datetime_from
+            type: string
+            required: false
+            desc: a date string in YYY-MM-DD 00:00:00 format as start of date range
+          - name: datetime_to
+            type: string
+            required: false
+            desc: a date string in YYY-MM-DD 00:00:00 format as endof date range
+          - name: exchange
+            type: string
+            required: false
+            desc: exchange that the stock ticker if a member of
+          - name: interval
+            type: interger
+            required: false
+            desc: time interval for data points
+          - name: window
+            type: list
+            required: false
+            desc: a list of look back windows to calculate a simple moving average
+      returns: |
+        [SMA](#tasma-entity) object
+      errors:
+        - status: 404
+          reason: the ticker is not found

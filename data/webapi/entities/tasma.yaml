@@ -1,0 +1,81 @@
+spec:
+  - name: ticker
+    type: string
+    desc: |
+      A stock ticker
+  - name: company_name
+    type: string
+    desc: |
+      Company name for stock
+  - name: exchange
+    type: string
+    desc: |
+      Exchange stock ticker is member of
+  - name: date_from
+    type: string
+    desc: |
+      Date range start
+  - name: date_to
+    type: string
+    desc: |
+      Date range end
+  - name: interval
+    type: string
+    desc: |
+      Time interval for data points.
+  - name: hits
+    type: integer
+    desc: |
+      Number of records returned
+  - name: took_ms
+    type: integer
+    desc: |
+      Number of milliseconds in server processing time
+  - name: data
+    type: list
+    desc: |
+      A list of price records in OHLC format
+  - name: sma_{window}
+    type: float
+    desc: |
+      The simple moving average
+example: |
+  {
+    "ticker": "air.nz",
+    "company_name": "Air New Zealand",
+    "exchange": "nzx",
+    "date_from": "2021-02-24 00:00:00",
+    "date_to": "2021-02-25 09:46:14.332140",
+    "interval": "0:15:00",
+    "hits": 3,
+    "took_ms": 2,
+    "data": [
+      {
+        "timestamp": 1613991600,
+        "close": 1.5750000476837158,
+        "open": 1.5700000524520874,
+        "high": 1.5750000476837158,
+        "low": 1.565000057220459,
+        "volume": 162790,
+        "sma_30": 1.627166666030884
+      },
+      {
+        "timestamp": 1614078000,
+        "close": 1.590000033378601,
+        "open": 1.590000033378601,
+        "high": 1.600000023841858,
+        "low": 1.590000033378601,
+        "volume": 107116,
+        "sma_30": 1.6223333338101706
+      },
+      {
+        "timestamp": 1614164400,
+        "close": 1.590000033378601,
+        "open": 1.5750000476837158,
+        "high": 1.5950000286102295,
+        "low": 1.5750000476837158,
+        "volume": 414827,
+        "sma_30": 1.6175000020662944
+      }
+    ]
+  }
