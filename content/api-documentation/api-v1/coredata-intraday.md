@@ -16,7 +16,7 @@ Authorization required for this endpoint
 ## EOD Entity
 
 ### Example
-{{< rest-entity-example name="coredataintraday>}}
+{{< rest-entity-example name="coredataintraday">}}
 
 ### Properties
 {{< rest-entity-desc name="coredataintraday">}}
