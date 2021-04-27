@@ -1,5 +1,5 @@
 endpoints:
-  /oauth/login
+  /oauth/login:
     GET:
       title: Authenticate
       summary: |

@@ -1,5 +1,5 @@
 endpoints:
-  /data/intraday
+  /data/intraday:
     GET:
       title: Get Intraday stock price data
       summary: |
