@@ -34,7 +34,7 @@ First make a note of your client id and client secret. These can be found [here]
 To authorize to protected endpoints such as Core Data: End of Day or Intraday you will need to present an Authorization header with your authorization code . 
 Calling a protected endpoint without providing a valid Authorization header will return a 401 Unauthorized error.
 
-{{< relref "/api-documentation/api-v1/authorization.md" >}}
+{{< relref "authorization.md" >}}
 
 ## Domains
 Financefeast's live API domain is `api.financefeast.io`

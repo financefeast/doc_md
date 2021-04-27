@@ -15,7 +15,7 @@ If you need help in getting started, [check out our examples and tutorials](/get
 
 With a free Financefeast account you can start interacting with stock market data.
 
-[Sign up for a Financefeast account here](https://identity.financefeast.io/signup)
+[Sign up for a Financefeast account here](https://identity.financefeast.io/account/signup)
 
 ## Read through the Web API Documentation
 
