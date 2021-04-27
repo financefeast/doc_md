@@ -27,17 +27,17 @@ Get in touch or read our guides on how you can develop your own Web application 
 
 First make a note of your client id and client secret. These can be found [here](https://customer.financefeast.io). 
 
-{{< relref "/authentication.md" >}}
+{{< relref "/api-documentation/api-v1/authentication.md" >}}
 
 ### To Authorize to Protected Endpoints
 
 To authorize to protected endpoints such as Core Data: End of Day or Intraday you will need to present an Authorization header with your authorization code . 
 Calling a protected endpoint without providing a valid Authorization header will return a 401 Unauthorized error.
 
-{{< relref "/authorization.md" >}}
+{{< relref "/api-documentation/api-v1/authorization.md" >}}
 
 ## Domains
-Financefeast's production API domain is `api.financefeast.io`
+Financefeast's live API domain is `api.financefeast.io`
 
 ## Rate Limit
 There is a rate limit for the API requests.  When it is exceeded, the API
