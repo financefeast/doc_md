@@ -6,7 +6,7 @@ weight: 20
 The EOD endpoint returns end-of-day stock price data for high, low, open, close, volume. This can be called at any time, even intra-day and 
 will return the last price received to date.
 
-{{< rest-endpoint resource="core-data-eod" method="GET" path="/data/eod" >}}
+{{< rest-endpoint resource="coredata-eod" method="GET" path="/data/eod" >}}
 
 <aside class="info">
 Authorization required for this endpoint

@@ -1,0 +1,21 @@
+endpoints:
+  /oauth/login
+    GET:
+      title: Authenticate
+      summary: |
+        Authenticate using your client credentials to obtain an authorization token
+      params:
+        header:
+          - name: FF-CLIENT-ID
+            type: string
+            required: true
+            desc: client id
+          - name: FF-CLIENT-SECRET
+            type: string
+            required: true
+            desc: client secret
+      returns: |
+        [Authentication(#authentication-entity) object
+      errors:
+        - status: 403
+          reason: not authenticated
