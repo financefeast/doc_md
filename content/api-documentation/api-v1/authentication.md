@@ -14,4 +14,3 @@ an authorization token.
 
 
 ### Properties
-{{< rest-entity-desc name="authentication">}}
