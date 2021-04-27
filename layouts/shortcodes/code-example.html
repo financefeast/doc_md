@@ -22,6 +22,8 @@
                     YAML
                 {{ else if eq $filename_ext "toml" }}
                     TOML
+                {{ else if eq $filename_ext "shell" }}
+                    Shell
                 {{ else}}
                     .{{ $filename_ext }}
                 {{ end }}

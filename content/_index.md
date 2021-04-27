@@ -28,3 +28,4 @@ one of the supported ones and start building your idea.
 ## Run Examples
 
 We have plenty of python examples to get you started coded in python. From simple Google Colab or Postman scripts, to more advanced.
+[Browse our examples]({{< relref "/api-documentation/how-to/_index.md" >}}) 

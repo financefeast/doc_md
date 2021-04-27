@@ -1,7 +1,7 @@
 endpoints:
   /data/eod:
     GET:
-      title: Get Intraday stock price data
+      title: Get EOD stock price data
       summary: |
         Returns stock price data for the last price of the trading day for open, high, low, close and volumne price points.
       params:
