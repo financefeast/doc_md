@@ -5,7 +5,7 @@ endpoints:
       summary: |
         Authenticate using your client credentials to obtain an authorization token
       params:
-        body:
+        header:
           - name: FF-CLIENT-ID
             type: string
             required: true
@@ -15,7 +15,7 @@ endpoints:
             required: true
             desc: client secret
       returns: |
-        [Authentication(#authentication-entity) object
+        [Authentication](#authentication-entity) object
       errors:
         - status: 403
           reason: not authenticated

@@ -1,25 +1,25 @@
-.palette-primary-yellow,
-.palette-primary-yellow .footer, .palette-primary-yellow .header {
+.palette-primary-orange,
+.palette-primary-orange .footer, .palette-primary-orange .header {
     background: #ffffff;
     color: #030303;
 }
-.palette-primary-yellow .article a, .palette-primary-yellow .article code {
+.palette-primary-orange .article a, .palette-primary-orange .article code {
     color: #ffa800;
 }
 
-.palette-primary-yellow .drawer .toc a.current, .palette-primary-yellow .drawer .toc a:focus, .palette-primary-yellow .drawer .toc a:hover {
+.palette-primary-orange .drawer .toc a.current, .palette-primary-orange .drawer .toc a:focus, .palette-primary-orange .drawer .toc a:hover {
     color: #bb7534; /*#FCD503; #BA9527; */
 }
 
-.palette-primary-yellow .article h1, .palette-primary-yellow .article h2 {
+.palette-primary-orange .article h1, .palette-primary-orange .article h2 {
   color: #bb7534;
 }
 
-.palette-primary-yellow .drawer .anchor a {
+.palette-primary-orange .drawer .anchor a {
     border-color: #ffa800;
 }
 @media only screen and (max-width: 959px) {
-    .palette-primary-yellow .project  {
+    .palette-primary-orange .project  {
         background: #030303;
         color: #FCD503;
     }
@@ -40,11 +40,11 @@
     font-size: 20px;
 }
 
-.palette-primary-yellow .article a, .palette-primary-yellow .article code, .palette-primary-yellow .article h1, .palette-primary-yellow .article h2 {
+.palette-primary-orange .article a, .palette-primary-orange .article code, .palette-primary-orange .article h1, .palette-primary-orange .article h2 {
     font-weight: bold;
 }
 
-.palette-primary-yellow .article code.hljs {
+.palette-primary-orange .article code.hljs {
     font-weight: normal;
 }
 

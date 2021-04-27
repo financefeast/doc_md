@@ -27,7 +27,7 @@ endpoints:
             required: false
             desc: time interval for data points
       returns: |
-        [CoreDataEOD(#coredataeod-entity) object
+        [EOD](#coredataeod-entity) object
       errors:
         - status: 404
           reason: the ticker is not found

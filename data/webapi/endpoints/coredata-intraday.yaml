@@ -5,7 +5,7 @@ endpoints:
       summary: |
         Returns stock price data for the last price of the trading day for open, high, low, close and volumne price points.
       params:
-        url:
+        query:
           - name: ticker
             type: string
             required: true
@@ -27,7 +27,7 @@ endpoints:
             required: false
             desc: time interval for data points
       returns: |
-        [CoreDataIntraday(#coredataintraday-entity) object
+        [Intraday](#coredataintraday-entity) object
       errors:
         - status: 404
           reason: the ticker is not found
