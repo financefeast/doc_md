@@ -1,5 +1,5 @@
 ---
-title: Intraday
+title: Intra-day
 weight: 30
 ---
 
