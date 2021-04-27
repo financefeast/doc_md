@@ -3,7 +3,7 @@ title: API v1
 weight: 10
 ---
 # API v1
-Financefeast is a modern platform to obtain stock market data using a simple HTTP based API.  Financefeast's
+Financefeast is a modern platform to obtain stock market data using a simple HTTP based API. Financefeast's
 API allows easy retrieval of 20 minute delayed and real-time price and fundamentals from multiple exchanges.
 
 In order to start data retrieval with financefeast API, please sign up
@@ -27,17 +27,17 @@ Get in touch or read our guides on how you can develop your own Web application 
 
 First make a note of your client id and client secret. These can be found [here](https://customer.financefeast.io). 
 
-{{< relref "/api-documentation/api-v1/authentication.md" >}}
+{{< relref "/authentication.md" >}}
 
 ### To Authorize to Protected Endpoints
 
 To authorize to protected endpoints such as Core Data: End of Day or Intraday you will need to present an Authorization header with your authorization code . 
 Calling a protected endpoint without providing a valid Authorization header will return a 401 Unauthorized error.
 
-{{< relref "/api-documentation/api-v1/authorization.md" >}}
+{{< relref "/authorization.md" >}}
 
 ## Domains
-Financefeast's live API domain is `api.financefeast.io`.
+Financefeast's production API domain is `api.financefeast.io`
 
 ## Rate Limit
 There is a rate limit for the API requests.  When it is exceeded, the API
