@@ -1,0 +1,29 @@
+spec:
+  - name: access_token
+    type: string
+    desc: |
+      An authorization token
+  - name: expires_in
+    type: string
+    desc: |
+      Token expires in (seconds)
+  - name: expires_at
+    type: string
+    desc: |
+      Token expiry date and time (timestamp in seconds)
+  - name: scope
+    type: string
+    desc: |
+      Token scope
+  - name: token_type
+    type: string
+    desc: |
+      Token type
+example: |
+  {
+    "access_token": "6OVVAfi1uOeKWrequ22ezOhVm828JFnl1XrlA8kWTp",
+    "expires_in": 864000,
+    "scope": "openid profile plan",
+    "token_type": "Bearer",
+    "expires_at": 1616270689
+  }

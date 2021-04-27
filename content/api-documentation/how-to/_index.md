@@ -9,12 +9,10 @@ Welcome to the how-to section of our documentation! Here, you'll find some examp
 the financefeast API in supported programming languages.
 
 Before running these examples, it is recommended that you set the following environment variables to the corresponding 
-values found on your dashboard. Please be aware of whether you're using the values for your paper trading account or 
-for your live trading account.
+values found on your customer api dashboard. You can get your client credentials [here]('https://customer.financefeast.io')
 ```
-APCA_API_BASE_URL
-APCA_API_KEY_ID
-APCA_API_SECRET_KEY
+FF-CLIENT-ID
+FF-CLIENT-SECRET
 ```
 On Linux, this can be done with `export ENV_VAR_NAME=DASHBOARD_VALUE`. (You'll probably want to add them to 
 your `~/.bash_profile` so they stay set when the machine restarts.) On Windows, you can instead 
