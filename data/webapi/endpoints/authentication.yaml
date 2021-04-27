@@ -5,7 +5,7 @@ endpoints:
       summary: |
         Authenticate using your client credentials to obtain an authorization token
       params:
-        header:
+        head:
           - name: FF-CLIENT-ID
             type: string
             required: true

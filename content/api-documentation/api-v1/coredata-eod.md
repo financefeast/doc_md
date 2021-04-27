@@ -8,9 +8,9 @@ will return the last price received to date.
 
 {{< rest-endpoint resource="coredata-eod" method="GET" path="/data/eod" >}}
 
-<aside class="info">
+{{</* info title="Authorization" */>}}
 Authorization required for this endpoint
-</aside>
+{{</* /note */>}}
 
 ## EOD Entity
 

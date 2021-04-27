@@ -9,9 +9,9 @@ supplied.
 
 {{< rest-endpoint resource="coredata-intraday" method="GET" path="/data/intraday" >}}
 
-<aside class="info">
+{{</* info title="Authorization" */>}}
 Authorization required for this endpoint
-</aside>
+{{</* /note */>}}
 
 ## EOD Entity
 

@@ -20,7 +20,7 @@ pygmentsUseClasses = true
 	# repo_url = "https://github.com/financefeast/"
 
 	version = ""
-	logo = "images/ff_logo_sm.png"
+	logo = "images/ff_logo.png"
 	favicon = "https://financefeast.io/images/favicon.ico"
 
 	permalink = "#"
