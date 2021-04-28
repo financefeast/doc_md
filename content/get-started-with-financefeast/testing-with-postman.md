@@ -1,10 +1,10 @@
 ---
-title: Try Out and Test the Financefeast API
+title: Test Financefeast API with Postman
 weight: 10
-description: How to test the Financefeast API without coding.
+description: How to test the Financefeast API without coding using Postman.
 ---
 
-## How to get started and test the Financefeast API
+## Test Financefeast API with Postman
 Want to get stock data with Financefeast, but you aren’t fully sure how the Financefeast API works yet? Here’s a step by step tutorial on testing the Financefeast API by manually using the Postman interface.
 
 ## This tutorial explains how to:
