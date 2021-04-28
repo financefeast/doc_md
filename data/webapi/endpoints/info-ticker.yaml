@@ -10,7 +10,6 @@ endpoints:
             type: string
             required: false
             desc: exchange to return tickers for
-
       returns: |
         [Ticker](#infoticker-entity) object
       errors:
