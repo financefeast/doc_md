@@ -39,11 +39,21 @@ Enter your client id into CLIENT_ID and your client secret into CLIENT_SECRET.
 <center><img src="./environment.png" width="80%"></center>
 {{< /safe-html >}}
 
+{{< note >}} Make sure the 'Environment' is set to 'Prod' {{< /note >}}
+
 ### Authenticate
 Under "Collections", run "Login" which will attempt to authenticate your client credentials. 
 If successful you will see a Bearer token. This will automatically be saved as an environment 
 variable "TOKEN" and used to authenticate all other requests to end points.
 
+{{< safe-html >}}
+<center><img src="./login.png" width="80%"></center>
+{{< /safe-html >}}
+
 ### Get Stock Data
 Once you are authenticated, under "Collections", run "EOD". You should see data for the pre-defined ticker. 
 You can change the ticker, and the date by changing the query params.
+
+{{< safe-html >}}
+<center><img src="./data.png" width="80%"></center>
+{{< /safe-html >}}
