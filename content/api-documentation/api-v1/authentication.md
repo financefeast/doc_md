@@ -18,4 +18,4 @@ an authorization token.
 
 ### Code Example
 
-[Authentication]({{< relref "/how-to/authentication.md" >}})
+[Authentication]({{< relref "/api-documentation/how-to/authenticate.md" >}})
