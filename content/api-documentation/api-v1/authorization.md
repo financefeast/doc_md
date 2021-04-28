@@ -16,7 +16,7 @@ tasks for you, so you can concentrate on developing your features. [SDK for your
 
 ## Authorization Entity
 
-You can find more information on how to form the header [here]({{< relref "/api-documentation/authorization.md" >}})
+You can find more information on how to form the header [here]({{< relref "/api-documentation/how-to/authorization.md" >}})
 
 ### Example
 {{< rest-entity-example name="authorization">}}
