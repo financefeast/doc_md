@@ -4,7 +4,7 @@ weight: 70
 ---
 
 ## Get a List of Tickers Based on a Search String
-By sending a GET request to our [`/info/ticker/{string}']({{< relref "/api-documentation/api-v1/info-ticker-search.md" >}}) endpoint you
+By sending a GET request to our [`/info/ticker/{string}`]({{< relref "/api-documentation/api-v1/info-ticker-search.md" >}}) endpoint you
 will get a list of available tickers based on a search sring for the exchange passed as a query parameter. If no parameter is passed all tickers
 on all exchanges will be returned.
 
