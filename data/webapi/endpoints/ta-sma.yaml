@@ -1,5 +1,5 @@
 endpoints:
-  /ta/sm-ma
+  /ta/sm-ma:
     GET:
       title: Get a Simple Moving Average
       summary: |

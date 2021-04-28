@@ -1,5 +1,5 @@
 endpoints:
-  /ta/ep-ma
+  /ta/ep-ma:
     GET:
       title: Get a Exponential Moving Average
       summary: |

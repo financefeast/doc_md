@@ -1,5 +1,5 @@
 endpoints:
-  /info/ticker
+  /info/ticker:
     GET:
       title: Get a list of tickers
       summary: |
