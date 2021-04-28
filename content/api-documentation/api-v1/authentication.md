@@ -15,3 +15,7 @@ an authorization token.
 
 ### Properties
 {{< rest-entity-desc name="authentication">}}
+
+### Code Example
+
+[Authentication]({{< relref "/api-documentation/how-to/authentication.md" >}})
