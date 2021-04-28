@@ -9,7 +9,7 @@ long running tasks is "best practice" to ensure expected application behaviour.
 
 {{< safe-html >}}
 <br>
-{{< safe-html >}}
+{{< /safe-html >}}
 
 To take the hassle out of authentication and authorization you should use our client libraries to take care of these
 tasks for you, so you can concentrate on developing your features. [SDK for your language]({{< relref "/api-documentation/client-sdk/_index.md" >}})
