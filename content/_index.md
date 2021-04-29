@@ -28,4 +28,9 @@ one of the supported ones and start building your idea.
 ## Run Examples
 
 We have plenty of python examples to get you started coded in python. From simple Google Colab or Postman scripts, to more advanced.
-[Browse our examples]({{< relref "/api-documentation/how-to/_index.md" >}}) 
+[Browse our examples]({{< relref "/api-documentation/how-to/_index.md" >}})
+
+## Help and Support
+
+Need help? Can find what your looking for here? Post a message on [community slack](https://financefeast.slack.com) and one of the Financefeast
+team or the community will help you.
