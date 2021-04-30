@@ -46,6 +46,14 @@ subscription plan you are on.**
 
 ## General Rules
 
+### Ticker symbols and uuid4
+When using a ticker parameter on an endpoint you can use either:
+* Symbol
+* Uuid4
+
+Either are accepted, with uuid4 being explict, where symbol could match from multiple exchanges if the ['exchange'] parameter is not passed
+as well.
+
 ### Time Format and Time Zone
 All date time type inputs and outputs are serialized according to
 [ISO8601](https://www.iso.org/iso-8601-date-and-time-format.html)
@@ -62,5 +70,5 @@ Object ID in financefeast system uses UUID v4.  When making requests, the format
 with dashes is accepted.
 
 ```
-904837e3-3b76-47ec-b432-046db621571b
+1d72e892-7336-4097-a762-7a9680111721
 ```

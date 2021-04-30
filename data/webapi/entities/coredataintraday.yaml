@@ -11,6 +11,10 @@ spec:
     type: string
     desc: |
       Exchange stock ticker is member of
+  - name: uuid4
+    type: string
+    desc: |
+      Stock uuid4 unique string
   - name: date_from
     type: string
     desc: |
@@ -40,6 +44,7 @@ example: |
     "ticker": "air.nz",
     "company_name": "Air New Zealand",
     "exchange": "nzx",
+    "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
     "date_from": "2021-02-24 00:00:00",
     "date_to": "2021-02-25 09:46:14.332140",
     "interval": "0:15:00",

@@ -9,7 +9,7 @@ endpoints:
           - name: string
             type: string
             required: true
-            desc: ticker and/or company name to search for
+            desc: ticker or company name or uuid4 to search for
         query:
           - name: exchange
             type: string

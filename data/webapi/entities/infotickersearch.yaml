@@ -7,6 +7,14 @@ spec:
     type: integer
     desc: |
       Number of milliseconds in server processing time
+  - name: exchange
+    type: string
+    desc: |
+      The exchange query parameter searched for
+  - name: search
+    type: string
+    desc: |
+      The search string
   - name: data
     type: list
     desc: |
@@ -14,7 +22,7 @@ spec:
   - name: symbol
     type: string
     desc: |
-      A stock ticker
+      The stock symbol
   - name: name
     type: string
     desc: |
@@ -27,24 +35,33 @@ spec:
     type: string
     desc: |
       The type of industry the company is in
-  - name: date_to
-    type: string
-    desc: |
-      Date range end
-  - name: uuid
+  - name: uuid4
     type: string
     desc: |
       Uuid4 unique string
+  - name: active
+    type: string
+    desc: |
+      Will be true if the ticker is listed on the exchange
+  - name: meta
+    type: list
+    desc: |
+      A list of additonal meta data
 example: |
   {
-    "hits": 103,
-    "took_ms": 0,
+    "hits": 1,
+    "took_ms": 8,
+    "exchange": "all",
+    "search": "air",
     "data": [
       {
-        "symbol": "WBC.NZ",
-        "name": "Westpac Bkg Corp",
-        "industry": "Finance",
-        "uuid": "2bc695f5-778e-4fa6-bd8a-f0632d341dc0"
+        "symbol": "AIR.NZ",
+        "company_name": "Air New Zealand",
+        "industry": "Transportation",
+        "exchange": "nzx",
+        "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
+        "active": true,
+        "meta": []
       }
     ]
   }

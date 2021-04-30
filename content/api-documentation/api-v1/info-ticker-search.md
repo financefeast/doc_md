@@ -4,7 +4,7 @@ weight: 70
 ---
 
 The Ticker Search endpoint returns a list of available tickers based on a search string.
-The search string can be a partial or full string for a ticker, or a company name.
+The search string can be a partial or full string for a symbol, a company name or a uuid4.
 
 {{< rest-endpoint resource="info-ticker-search" method="GET" path="/info/ticker/{string}" >}}
 

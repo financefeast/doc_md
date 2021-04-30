@@ -7,6 +7,10 @@ spec:
     type: integer
     desc: |
       Number of milliseconds in server processing time
+  - name: exchange
+    type: string
+    desc: |
+      The exchange query parameter searched for
   - name: data
     type: list
     desc: |
@@ -14,7 +18,7 @@ spec:
   - name: symbol
     type: string
     desc: |
-      A stock ticker
+      The stock symbol
   - name: name
     type: string
     desc: |
@@ -27,42 +31,41 @@ spec:
     type: string
     desc: |
       The type of industry the company is in
-  - name: date_to
-    type: string
-    desc: |
-      Date range end
-  - name: uuid
+  - name: uuid4
     type: string
     desc: |
       Uuid4 unique string
+  - name: active
+    type: string
+    desc: |
+      Will be true if the ticker is listed on the exchange
+  - name: meta
+    type: list
+    desc: |
+      A list of additonal meta data
 example: |
   {
     "hits": 103,
     "took_ms": 0,
+    "exchange": "all",
     "data": [
-      {
-        "symbol": "WBC.NZ",
-        "name": "Westpac Bkg Corp",
-        "industry": "Finance",
-        "uuid": "2bc695f5-778e-4fa6-bd8a-f0632d341dc0"
-      },
-      {
-        "symbol": "ANZ.NZ",
-        "name": "Aust & Nz Bank Grp",
-        "industry": "Finance",
-        "uuid": "6gc695f5-778e-7fa6-nd8a-f0242d341dc0"
-      },
-      {
-        "symbol": "TLS.NZ",
-        "name": "Telstra Corp Ltd",
-        "industry": "Communications",
-        "uuid": "2pc6n35-791e-0fa2-nd8a-k024vm37zq9c0"
-      },
-      {
-        "symbol": "FPH.NZ",
-        "name": "Fisher & Paykel He",
-        "industry": "Health Technology",
-        "uuid": "1bc695u5-168e-4fa6-bd8a-a0632d941dc2"
-      }
+        {
+          "symbol": "ABA.NZ",
+          "company_name": "Abano Healthcare G",
+          "industry": "Health Services",
+          "exchange": "nzx",
+          "uuid4": "01946ad5-b865-4175-b897-f5e384d7c770",
+          "active": true,
+          "meta": []
+        },
+        {
+          "symbol": "AFT.NZ",
+          "company_name": "Aft Pharmaceutical",
+          "industry": "Health Technology",
+          "exchange": "nzx",
+          "uuid4": "80d45deb-8dcb-4269-81d2-666a287bb495",
+          "active": true,
+          "meta": []
+        }
     ]
   }
