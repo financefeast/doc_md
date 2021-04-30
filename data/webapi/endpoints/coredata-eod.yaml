@@ -9,7 +9,7 @@ endpoints:
           - name: ticker
             type: string
             required: true
-            desc: stock ticker
+            desc: stock ticker or uuid4
           - name: date_from
             type: string
             required: false
