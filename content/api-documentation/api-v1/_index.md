@@ -51,7 +51,7 @@ When using a ticker parameter on an endpoint you can use either:
 * Symbol
 * Uuid4
 
-Either are accepted, with uuid4 being explict, where symbol could match from multiple exchanges if the ['exchange'] parameter is not passed
+Either are accepted, with uuid4 being explict, where symbol could match from multiple exchanges if the [`exchange`] parameter is not passed
 as well.
 
 ### Time Format and Time Zone
