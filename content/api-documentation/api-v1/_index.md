@@ -62,7 +62,7 @@ communication does not assume a particular time zone, and this date time
 serialization denominates the time offset of each value.
 
 ### Numbers
-Decimal numbers are returned as floats or integers depending on the parameter. When sending interger or float values
+Decimal numbers are returned as floats or integers depending on the parameter. When sending integer or float values
 to Financefeast API you can use strings or the primitive type.
 
 ### IDs
