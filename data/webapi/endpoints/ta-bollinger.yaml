@@ -1,0 +1,39 @@
+endpoints:
+  /ta/bollinger:
+    GET:
+      title: Get a Bollinger Band
+      summary: |
+        Returns price data with a bollinger band
+      params:
+        query:
+          - name: ticker
+            type: string
+            required: true
+            desc: stock ticker or uuid4
+          - name: datetime_from
+            type: string
+            required: false
+            desc: a date string in YYY-MM-DD 00:00:00 format as start of date range
+          - name: datetime_to
+            type: string
+            required: false
+            desc: a date string in YYY-MM-DD 00:00:00 format as endof date range
+          - name: exchange
+            type: string
+            required: false
+            desc: exchange that the stock ticker if a member of
+          - name: interval
+            type: interger
+            required: false
+            desc: time interval for data points
+          - name: window
+            type: integer
+            required: false
+            desc: a integer of look back window to calculate bollinger band
+      returns: |
+        [ADX](#taadx-entity) object
+      errors:
+        - status: 403
+          reason: not authenticated
+        - status: 404
+          reason: the ticker is not found
