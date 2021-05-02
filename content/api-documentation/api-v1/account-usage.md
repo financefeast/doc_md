@@ -8,7 +8,7 @@ count per day.
 
 {{< rest-endpoint resource="account-usage" method="GET" path="/account/usage" >}}
 
-## Exchange Entity
+## Usage Entity
 
 ### Example
 {{< rest-entity-example name="accountusage">}}
