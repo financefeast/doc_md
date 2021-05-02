@@ -1,0 +1,100 @@
+spec:
+  - name: ticker
+    type: string
+    desc: |
+      A stock ticker
+  - name: company_name
+    type: string
+    desc: |
+      Company name for stock
+  - name: exchange
+    type: string
+    desc: |
+      Exchange stock ticker is member of
+  - name: uuid4
+    type: string
+    desc: |
+      Stock uuid4 unique string
+  - name: date_from
+    type: string
+    desc: |
+      Date range start
+  - name: date_to
+    type: string
+    desc: |
+      Date range end
+  - name: interval
+    type: string
+    desc: |
+      Time interval for data points.
+  - name: hits
+    type: integer
+    desc: |
+      Number of records returned
+  - name: took_ms
+    type: integer
+    desc: |
+      Number of milliseconds in server processing time
+  - name: data
+    type: list
+    desc: |
+      A list of price records in OHLC format
+  - name: adx
+    type: float
+    desc: |
+      The average directional index
+  - name: posdi
+    type: float
+    desc: |
+      The average directional index positive DI
+  - name: negdi
+    type: float
+    desc: |
+      The average directional index negative DI
+example: |
+  {
+    "ticker": "air.nz",
+    "company_name": "Air New Zealand",
+    "exchange": "",
+    "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
+    "date_from": "2020-04-01 00:00:00",
+    "date_to": "2021-05-03 09:58:15.892584",
+    "interval": "1:00:00",
+    "hits": 766,
+    "took_ms": 237,
+    "data": [
+      {
+        "timestamp": "2021-04-01T12:09:17",
+        "close": 1.71,
+        "open": 1.71,
+        "high": 1.71,
+        "low": 1.71,
+        "volume": 0,
+        "adx": 0,
+        "posdi": 0,
+        "negdi": 0
+      },
+      {
+        "timestamp": "2021-04-01T13:00:00",
+        "close": 1.74,
+        "open": 1.715,
+        "high": 1.745,
+        "low": 1.715,
+        "volume": 152004,
+        "adx": 0,
+        "posdi": 34.6420323325635,
+        "negdi": 1.8497109826589906
+      },
+      {
+        "timestamp": "2021-04-01T14:00:00",
+        "close": 1.73,
+        "open": 1.74,
+        "high": 1.74,
+        "low": 1.72,
+        "volume": 148870,
+        "adx": 0,
+        "posdi": 25.21008403361347,
+        "negdi": 1.18430792005924
+      }
+    ]
+  }
