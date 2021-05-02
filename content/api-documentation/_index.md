@@ -11,7 +11,7 @@ it. Make sure you keep both in your hands.
 
 ### [Web API v1]({{< relref "/api-documentation/api-v1/_index.md" >}})
  
-Current version of the Financefeast API is ['v1']
+Current version of the Financefeast API is [`v1`]
 
 ### [How-To Code Examples]({{< relref "/api-documentation/how-to/_index.md" >}})
 
