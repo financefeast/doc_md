@@ -33,5 +33,7 @@ endpoints:
       returns: |
         [SMA](#tasma-entity) object
       errors:
+        - status: 403
+          reason: not authenticated
         - status: 404
           reason: the ticker is not found

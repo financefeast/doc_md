@@ -6,7 +6,7 @@ spec:
   - name: date_to
     type: string
     desc: |
-      Date range end-
+      Date range end
   - name: hits
     type: integer
     desc: |
@@ -28,11 +28,15 @@ example: |
     "data": [
       {
         "path": "/account/usage",
-        "count": 19,
+        "count": 24,
         "days": [
           {
             "date": "2021-05-02T00:00:00.000Z",
             "count": 19
+          },
+          {
+            "date": "2021-05-03T00:00:00.000Z",
+            "count": 5
           }
         ]
       }

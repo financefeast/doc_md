@@ -1,6 +1,6 @@
 ---
 title: Exchange
-weight: 60
+weight: 70
 ---
 
 The Exchange endpoint returns a list of available supported exchanges on the API.

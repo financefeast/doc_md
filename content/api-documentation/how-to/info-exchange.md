@@ -1,6 +1,6 @@
 ---
 title: Exchange Examples
-weight: 70
+weight: 80
 ---
 
 ## Get a List of Exchanges

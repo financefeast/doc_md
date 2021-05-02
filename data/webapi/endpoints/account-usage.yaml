@@ -16,3 +16,6 @@ endpoints:
             desc: a date string in YYY-MM-DD format as endof date range
       returns: |
         [Usage](#accountusage-entity) object
+      errors:
+        - status: 403
+          reason: not authenticated
