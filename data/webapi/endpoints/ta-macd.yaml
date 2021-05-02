@@ -1,0 +1,35 @@
+endpoints:
+  /ta/macd:
+    GET:
+      title: Get a Moving Average Convergence Divergence
+      summary: |
+        Returns price data with a moving average convergence divergence
+      params:
+        query:
+          - name: ticker
+            type: string
+            required: true
+            desc: stock ticker or uuid4
+          - name: datetime_from
+            type: string
+            required: false
+            desc: a date string in YYY-MM-DD 00:00:00 format as start of date range
+          - name: datetime_to
+            type: string
+            required: false
+            desc: a date string in YYY-MM-DD 00:00:00 format as endof date range
+          - name: exchange
+            type: string
+            required: false
+            desc: exchange that the stock ticker if a member of
+          - name: interval
+            type: interger
+            required: false
+            desc: time interval for data points
+      returns: |
+        [MACD](#tamacd-entity) object
+      errors:
+        - status: 403
+          reason: not authenticated
+        - status: 404
+          reason: the ticker is not found
