@@ -1,6 +1,6 @@
 ---
 title: Exponential Moving Average
-weight: 100
+weight: 30
 ---
 
 The Exponential Moving Average endpoint returns price data along with a exponential moving average calculation. By default

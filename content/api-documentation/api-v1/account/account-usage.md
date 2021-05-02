@@ -1,6 +1,6 @@
 ---
 title: Usage
-weight: 80
+weight: 10
 ---
 
 The Usage endpoint returns a list of endpoints called for the date range supplied along with a 

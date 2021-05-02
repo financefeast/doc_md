@@ -1,6 +1,6 @@
 ---
 title: Intraday
-weight: 40
+weight: 30
 ---
 
 The Intraday endpoint returns intraday stock price data for high, low, open, close and volume. Prices are updated at least

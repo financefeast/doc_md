@@ -1,6 +1,6 @@
 ---
 title: End of Day
-weight: 30
+weight: 20
 ---
 
 The EOD endpoint returns end-of-day stock price data for high, low, open, close, volume. This can be called at any time, even intra-day and 

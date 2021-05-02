@@ -1,6 +1,6 @@
 ---
 title: Simple Moving Average
-weight: 100
+weight: 20
 ---
 
 The Simple Moving Average endpoint returns price data along with a simple moving average calculation. By default
