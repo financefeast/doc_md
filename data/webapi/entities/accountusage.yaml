@@ -1,0 +1,40 @@
+spec:
+  - name: date_from
+    type: string
+    desc: |
+      Date range start
+  - name: date_to
+    type: string
+    desc: |
+      Date range end-
+  - name: hits
+    type: integer
+    desc: |
+      Number of records returned
+  - name: took_ms
+    type: integer
+    desc: |
+      Number of milliseconds in server processing time
+  - name: data
+    type: list
+    desc: |
+      A list of urls and counts by day
+example: |
+  {
+    "date_from": "2021-04-02T20:04:31.511583",
+    "date_to": "2021-05-02T20:04:31.511584",
+    "hits": 1,
+    "took_ms": 29,
+    "data": [
+      {
+        "path": "/account/usage",
+        "count": 19,
+        "days": [
+          {
+            "date": "2021-05-02T00:00:00.000Z",
+            "count": 19
+          }
+        ]
+      }
+    ]
+  }

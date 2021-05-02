@@ -1,0 +1,18 @@
+endpoints:
+  /account/usage:
+    GET:
+      title: Get a list endpoints called
+      summary: |
+        Returns a list of endpoints called for a date range. Returned are the endpoint paths, and the count by day.
+      params:
+        query:
+          - name: date_from
+            type: string
+            required: false
+            desc: a date string in YYY-MM-DD format as start of date range
+          - name: date_to
+            type: string
+            required: false
+            desc: a date string in YYY-MM-DD format as endof date range
+      returns: |
+        [Usage](#accountusage-entity) object
