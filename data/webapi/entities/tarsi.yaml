@@ -1,0 +1,95 @@
+spec:
+  - name: ticker
+    type: string
+    desc: |
+      A stock ticker
+  - name: company_name
+    type: string
+    desc: |
+      Company name for stock
+  - name: exchange
+    type: string
+    desc: |
+      Exchange stock ticker is member of
+  - name: uuid4
+    type: string
+    desc: |
+      Stock uuid4 unique string
+  - name: date_from
+    type: string
+    desc: |
+      Date range start
+  - name: date_to
+    type: string
+    desc: |
+      Date range end
+  - name: interval
+    type: string
+    desc: |
+      Time interval for data points.
+  - name: hits
+    type: integer
+    desc: |
+      Number of records returned
+  - name: took_ms
+    type: integer
+    desc: |
+      Number of milliseconds in server processing time
+  - name: data
+    type: list
+    desc: |
+      A list of price records in OHLC format
+  - name: rsi
+    type: float
+    desc: |
+      The relative strength indicator
+example: |
+  {
+    "ticker": "air.nz",
+    "company_name": "Air New Zealand",
+    "exchange": "",
+    "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
+    "date_from": "2020-04-01 00:00:00",
+    "date_to": "2021-05-03 09:58:15.892584",
+    "interval": "1:00:00",
+    "hits": 766,
+    "took_ms": 237,
+    "data": [
+      {
+        "timestamp": "2020-10-05T00:00:00",
+        "close": 1.505,
+        "open": 1.5,
+        "high": 1.515,
+        "low": 1.5,
+        "volume": 260855,
+        "rsi": 0
+      },
+      {
+        "timestamp": "2020-10-06T00:00:00",
+        "close": 1.56,
+        "open": 1.545,
+        "high": 1.56,
+        "low": 1.545,
+        "volume": 613818,
+        "rsi": 100
+      },
+      {
+        "timestamp": "2020-10-07T00:00:00",
+        "close": 1.535,
+        "open": 1.54,
+        "high": 1.545,
+        "low": 1.52,
+        "volume": 230075,
+        "rsi": 93.46405228758168
+      },
+      {
+        "timestamp": "2020-10-07T14:00:00",
+        "close": 1.54,
+        "open": 1.535,
+        "high": 1.545,
+        "low": 1.535,
+        "volume": 79255,
+        "rsi": 93.56116889549281
+      }
+    ]
+  }

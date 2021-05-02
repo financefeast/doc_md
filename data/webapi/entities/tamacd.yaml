@@ -48,65 +48,66 @@ spec:
     desc: |
       The moving average convergence divergence signal
 example: |
-{
-  "ticker": "air.nz",
-  "company_name": "Air New Zealand",
-  "exchange": "",
-  "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
-  "date_from": "2021-03-01 00:00:00",
-  "date_to": "2021-05-03 09:02:53.545577",
-  "interval": "1:00:00",
-  "hits": 180,
-  "took_ms": 332,
-  "data": [
-    {
-      "timestamp": "2021-03-01T10:00:00",
-      "close": 1.575,
-      "open": 1.58,
-      "high": 1.58,
-      "low": 1.57,
-      "volume": 184139,
-      "macd": 0,
-      "macd_signal": 0
-    },
-    {
-      "timestamp": "2021-03-01T11:00:00",
-      "close": 1.57,
-      "open": 1.575,
-      "high": 1.58,
-      "low": 1.57,
-      "volume": 257362,
-      "macd": -0.00039886039886050106,
-      "macd_signal": -0.00007977207977210022
-    },
-    {
-      "timestamp": "2021-03-01T12:00:00",
-      "close": 1.575,
-      "open": 1.575,
-      "high": 1.575,
-      "low": 1.57,
-      "volume": 2817,
-      "macd": -0.0003079520458439955,
-      "macd_signal": -0.00012540807298647928
-    },
-    {
-      "timestamp": "2021-03-01T12:08:30",
-      "close": 1.57,
-      "open": 1.57,
-      "high": 1.57,
-      "low": 1.57,
-      "volume": 0,
-      "macd": -0.0006320785265763185,
-      "macd_signal": -0.00022674216370444713
-    },
-    {
-      "timestamp": "2021-03-02T10:00:00",
-      "close": 1.615,
-      "open": 1.605,
-      "high": 1.615,
-      "low": 1.6,
-      "volume": 142992,
-      "macd": 0.002710922988822473,
-      "macd_signal": 0.0003607908668009369
-    }
+  {
+    "ticker": "air.nz",
+    "company_name": "Air New Zealand",
+    "exchange": "",
+    "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
+    "date_from": "2021-03-01 00:00:00",
+    "date_to": "2021-05-03 09:02:53.545577",
+    "interval": "1:00:00",
+    "hits": 180,
+    "took_ms": 332,
+    "data": [
+      {
+        "timestamp": "2021-03-01T10:00:00",
+        "close": 1.575,
+        "open": 1.58,
+        "high": 1.58,
+        "low": 1.57,
+        "volume": 184139,
+        "macd": 0,
+        "macd_signal": 0
+      },
+      {
+        "timestamp": "2021-03-01T11:00:00",
+        "close": 1.57,
+        "open": 1.575,
+        "high": 1.58,
+        "low": 1.57,
+        "volume": 257362,
+        "macd": -0.00039886039886050106,
+        "macd_signal": -0.00007977207977210022
+      },
+      {
+        "timestamp": "2021-03-01T12:00:00",
+        "close": 1.575,
+        "open": 1.575,
+        "high": 1.575,
+        "low": 1.57,
+        "volume": 2817,
+        "macd": -0.0003079520458439955,
+        "macd_signal": -0.00012540807298647928
+      },
+      {
+        "timestamp": "2021-03-01T12:08:30",
+        "close": 1.57,
+        "open": 1.57,
+        "high": 1.57,
+        "low": 1.57,
+        "volume": 0,
+        "macd": -0.0006320785265763185,
+        "macd_signal": -0.00022674216370444713
+      },
+      {
+        "timestamp": "2021-03-02T10:00:00",
+        "close": 1.615,
+        "open": 1.605,
+        "high": 1.615,
+        "low": 1.6,
+        "volume": 142992,
+        "macd": 0.002710922988822473,
+        "macd_signal": 0.0003607908668009369
+      }
+    ]
   }
