@@ -1,0 +1,103 @@
+spec:
+  - name: ticker
+    type: string
+    desc: |
+      A stock ticker
+  - name: company_name
+    type: string
+    desc: |
+      Company name for stock
+  - name: exchange
+    type: string
+    desc: |
+      Exchange stock ticker is member of
+  - name: uuid4
+    type: string
+    desc: |
+      Stock uuid4 unique string
+  - name: date_from
+    type: string
+    desc: |
+      Date range start
+  - name: date_to
+    type: string
+    desc: |
+      Date range end
+  - name: interval
+    type: string
+    desc: |
+      Time interval for data points.
+  - name: hits
+    type: integer
+    desc: |
+      Number of records returned
+  - name: took_ms
+    type: integer
+    desc: |
+      Number of milliseconds in server processing time
+  - name: data
+    type: list
+    desc: |
+      A list of price records in OHLC format
+  - name: stoch_k
+    type: float
+    desc: |
+      The stochastic oscillator slow signal
+  - name: stoch_d
+    type: float
+    desc: |
+      The stochastic oscillator fast signal
+example: |
+  {
+    "ticker": "air.nz",
+    "company_name": "Air New Zealand",
+    "exchange": "",
+    "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
+    "date_from": "2020-04-01 00:00:00",
+    "date_to": "2021-05-03 09:58:15.892584",
+    "interval": "1:00:00",
+    "hits": 766,
+    "took_ms": 237,
+    "data": [
+        {
+          "timestamp": "2021-04-08T10:00:00",
+          "close": 1.84,
+          "open": 1.825,
+          "high": 1.84,
+          "low": 1.815,
+          "volume": 244816,
+          "stoch_k": 72.2222222222223,
+          "stoch_d": 81.96881091617944
+        },
+        {
+          "timestamp": "2021-04-08T11:00:00",
+          "close": 1.815,
+          "open": 1.84,
+          "high": 1.84,
+          "low": 1.815,
+          "volume": 90858,
+          "stoch_k": 57.14285714285712,
+          "stoch_d": 71.19186856028966
+        },
+        {
+          "timestamp": "2021-04-08T12:00:00",
+          "close": 1.825,
+          "open": 1.815,
+          "high": 1.825,
+          "low": 1.815,
+          "volume": 15828,
+          "stoch_k": 61.764705882352956,
+          "stoch_d": 63.70992841581079
+        },
+        {
+          "timestamp": "2021-04-08T12:09:59",
+          "close": 1.82,
+          "open": 1.82,
+          "high": 1.82,
+          "low": 1.82,
+          "volume": 0,
+          "stoch_k": 58.82352941176478,
+          "stoch_d": 59.24369747899161
+        }
+    ]
+  }
