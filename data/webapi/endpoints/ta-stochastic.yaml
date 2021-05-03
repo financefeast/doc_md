@@ -35,7 +35,7 @@ endpoints:
             required: false
             desc: a integer of look back window to calculate the stochastic oscillator's simple moving average
       returns: |
-        [ADX](#taadx-entity) object
+        [Stochastic](#tastochastic-entity) object
       errors:
         - status: 403
           reason: not authenticated

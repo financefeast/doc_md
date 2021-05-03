@@ -31,7 +31,7 @@ endpoints:
             required: false
             desc: a integer of look back window to calculate bollinger band
       returns: |
-        [ADX](#taadx-entity) object
+        [Bollinger](#tabillinger-entity) object
       errors:
         - status: 403
           reason: not authenticated
