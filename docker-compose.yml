@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  www:
+    build: ./
+    container_name: financefeast_doc
+    environment:
+      - HUGO_BASEURL=https://doc.financefeast.io
+      - ADD_GA=true
+    ports:
+      - "8083:80"
+    restart: unless-stopped
