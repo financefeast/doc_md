@@ -1,0 +1,87 @@
+spec:
+  - name: ticker
+    type: string
+    desc: |
+      A stock ticker
+  - name: company_name
+    type: string
+    desc: |
+      Company name for stock
+  - name: exchange
+    type: string
+    desc: |
+      Exchange stock ticker is member of
+  - name: uuid4
+    type: string
+    desc: |
+      Stock uuid4 unique string
+  - name: date_from
+    type: string
+    desc: |
+      Date range start
+  - name: date_to
+    type: string
+    desc: |
+      Date range end
+  - name: interval
+    type: string
+    desc: |
+      Time interval for data points.
+  - name: hits
+    type: integer
+    desc: |
+      Number of records returned
+  - name: took_ms
+    type: integer
+    desc: |
+      Number of milliseconds in server processing time
+  - name: data
+    type: list
+    desc: |
+      A list of dividend records
+example: |
+    {
+      "ticker": "air.nz",
+      "company_name": "Air New Zealand",
+      "exchange": "nzx",
+      "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
+      "date_from": "2018-01-01",
+      "date_to": "2021-02-25",
+      "interval": "364 days, 0:00:00",
+      "hits": 2,
+      "took_ms": 5,
+      "data": [
+          {
+            "timestamp": "2021-01-05T00:00:00",
+            "close": 1.79,
+            "open": 1.8,
+            "high": 1.8,
+            "low": 1.785,
+            "volume": 291549
+          },
+          {
+            "timestamp": "2021-01-06T00:00:00",
+            "close": 1.785,
+            "open": 1.78,
+            "high": 1.79,
+            "low": 1.77,
+            "volume": 116639
+          },
+          {
+            "timestamp": "2021-01-07T00:00:00",
+            "close": 1.81,
+            "open": 1.79,
+            "high": 1.815,
+            "low": 1.79,
+            "volume": 288163
+          },
+          {
+            "timestamp": "2021-01-08T00:00:00",
+            "close": 1.77,
+            "open": 1.79,
+            "high": 1.795,
+            "low": 1.77,
+            "volume": 170349
+          }
+      ]
+    }
