@@ -1,0 +1,88 @@
+spec:
+  - name: ticker
+    type: string
+    desc: |
+      A stock ticker
+  - name: company_name
+    type: string
+    desc: |
+      Company name for stock
+  - name: exchange
+    type: string
+    desc: |
+      Exchange stock ticker is member of
+  - name: uuid4
+    type: string
+    desc: |
+      Stock uuid4 unique string
+  - name: date_from
+    type: string
+    desc: |
+      Date range start
+  - name: date_to
+    type: string
+    desc: |
+      Date range end
+  - name: interval
+    type: string
+    desc: |
+      Time interval for data points.
+  - name: hits
+    type: integer
+    desc: |
+      Number of records returned
+  - name: took_ms
+    type: integer
+    desc: |
+      Number of milliseconds in server processing time
+  - name: data
+    type: list
+    desc: |
+      A list of balance sheet records
+example: |
+  {
+    "ticker": "air.nz",
+    "company_name": "Air New Zealand",
+    "exchange": "",
+    "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
+    "date_from": "2020-01-01 00:00:00",
+    "date_to": "2020-12-31 00:00:00",
+    "hits": 1,
+    "took_ms": 10,
+    "data": [
+      {
+        "symbol": "AIR.NZ",
+        "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
+        "exchange": "nzx",
+        "date": "2020-06-30",
+        "created": "2021-05-05T20:03:44.177202",
+        "year": "2020",
+        "data": {
+          "intangibleAssets": 186000000,
+          "totalLiab": 6225000000,
+          "totalStockholderEquity": 1318000000,
+          "otherCurrentLiab": 1085000000,
+          "totalAssets": 7543000000,
+          "commonStock": 2197000000,
+          "otherCurrentAssets": 81000000,
+          "retainedEarnings": -757000000,
+          "otherLiab": 935000000,
+          "treasuryStock": -122000000,
+          "otherAssets": 493000000,
+          "cash": 130000000,
+          "totalCurrentLiabilities": 2102000000,
+          "shortLongTermDebt": 160000000,
+          "otherStockholderEquity": -122000000,
+          "propertyPlantEquipment": 5693000000,
+          "totalCurrentAssets": 1009000000,
+          "longTermInvestments": 162000000,
+          "netTangibleAssets": 1132000000,
+          "shortTermInvestments": 308000000,
+          "netReceivables": 339000000,
+          "longTermDebt": 1303000000,
+          "inventory": 106000000,
+          "accountsPayable": 322000000
+        }
+      }
+    ]
+  }

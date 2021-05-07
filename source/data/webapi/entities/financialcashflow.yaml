@@ -1,0 +1,79 @@
+spec:
+  - name: ticker
+    type: string
+    desc: |
+      A stock ticker
+  - name: company_name
+    type: string
+    desc: |
+      Company name for stock
+  - name: exchange
+    type: string
+    desc: |
+      Exchange stock ticker is member of
+  - name: uuid4
+    type: string
+    desc: |
+      Stock uuid4 unique string
+  - name: date_from
+    type: string
+    desc: |
+      Date range start
+  - name: date_to
+    type: string
+    desc: |
+      Date range end
+  - name: interval
+    type: string
+    desc: |
+      Time interval for data points.
+  - name: hits
+    type: integer
+    desc: |
+      Number of records returned
+  - name: took_ms
+    type: integer
+    desc: |
+      Number of milliseconds in server processing time
+  - name: data
+    type: list
+    desc: |
+      A list of cashflow records
+example: |
+  {
+    "ticker": "air.nz",
+    "company_name": "Air New Zealand",
+    "exchange": "",
+    "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
+    "date_from": "2020-01-01 00:00:00",
+    "date_to": "2020-12-31 00:00:00",
+    "hits": 1,
+    "took_ms": 17,
+    "data": [
+      {
+        "symbol": "AIR.NZ",
+        "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
+        "exchange": "nzx",
+        "created": "2021-05-05T20:03:44.293789",
+        "date": "2020-06-30",
+        "year": "2020",
+        "data": {
+          "investments": -36000000,
+          "changeToLiabilities": -253000000,
+          "totalCashflowsFromInvestingActivities": -542000000,
+          "netBorrowings": -234000000,
+          "totalCashFromFinancingActivities": -305000000,
+          "changeToOperatingActivities": -237000000,
+          "netIncome": -454000000,
+          "changeInCash": -617000000,
+          "totalCashFromOperatingActivities": 230000000,
+          "depreciation": 794000000,
+          "otherCashflowsFromInvestingActivities": 42000000,
+          "dividendsPaid": -130000000,
+          "otherCashflowsFromFinancingActivities": 59000000,
+          "changeToNetincome": 333000000,
+          "capitalExpenditures": -615000000
+        }
+      }
+    ]
+  }
