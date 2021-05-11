@@ -28,11 +28,11 @@ Financefeast uses [`OAuth2`] as the framework to authorize Financefeast customer
 
 * Before integrating with Financefeast, you'll first need to create a new OAuth client under your [OAuth Apps](https://identity.financefeast.io/oauth/create_client) page.
 
-<center><img src="./add_client.png" width="80%"></center>
+<center><img src="oauth_guide/add_client.png" width="80%"></center>
 
-* Once you add your relevant information and create the client, you will see your new client in your [Integrated Applications](http://localhost:5003/#clients) page.
+* Once you add your relevant information and create the client, you will see your new client in your [Integrated Applications](https://identity.financefeast.io/#clients) page.
 
-<center><img src="./new_client.png" width="60%"></center>
+<center><img src="oauth_guide/new_client.png" width="60%"></center>
 
 ## Integration
 
@@ -40,7 +40,7 @@ Once the client is approved we will enable it, and then you can start integratio
 
 To integrate your application with Financefeast, use [`authorization_code`] flow. More details can be found in the [RFC6749](https://datatracker.ietf.org/doc/html/rfc6749)
 
-<center><img src="./authorization_code_flow.png" width="80%"></center>
+<center><img src="oauth_guide/authorization_code_flow.png" width="80%"></center>
 
 If you are developing your application in python we recommend using [Authlib](https://docs.authlib.org/en/latest/client/frameworks.html) to handle
 the OAuth flows.
@@ -76,7 +76,7 @@ When redirecting a user to Financefeast to authorize access to your application,
 
 From the user side, they will see the following authorization screen:
 
-<center><img src="./authorise_screen.png" width="40%"></center>
+<center><img src="oauth_guide/authorise_screen.png" width="40%"></center>
 
 ### 3. ***Financefeast redirects end user to application with an authorization code.***
 
