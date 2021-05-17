@@ -35,84 +35,558 @@ spec:
     type: list
     desc: |
       A list of social media with sentiment posts
+  - name: aggregation
+    type: list
+    desc: |
+      A list of sentiments aggregated into days with count per day
 example: |
-  {
-    "ticker": "air.nz",
-    "company_name": "Air New Zealand",
-    "exchange": "",
-    "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
-    "date_from": "2021-05-16 00:00:00",
-    "date_to": "2021-05-17 00:00:00",
-    "hits": 17,
-    "took_ms": 15,
-    "data": [
-        {
-          "id": "1393727186927030272",
-          "author": "Birder",
-          "text": "RT @BrinRudkin: @JoelMacManus For a laugh? There were sick, terminally ill children on board. For some this will be the highlight of their…",
-          "sentiment": "positive",
-          "meta": {
-            "hashtags": [],
-            "urls": []
-          },
-          "created": "2021-05-16T00:37:10",
-          "platform": "twitter"
-        },
-        {
-          "id": "1393738665138946052",
-          "author": "Paola 🌅",
-          "text": "Using some of our Air NZ credits,...still have over $2000 left and the Airpoints $ stacking up. Feel a trip to sunn… https://t.co/LgCQuFjJbV",
-          "sentiment": "negative",
-          "meta": {
-            "hashtags": [],
-            "urls": [
-              {
-                "url": "https://t.co/LgCQuFjJbV",
-                "expanded_url": "https://twitter.com/i/web/status/1393738665138946052",
-                "display_url": "twitter.com/i/web/status/1…",
-                "indices": [
-                  117,
-                  140
-                ]
-              }
+{
+  "ticker": "air.nz",
+  "company_name": "Air New Zealand",
+  "exchange": "",
+  "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
+  "date_from": "2021-05-01 00:00:00",
+  "date_to": "2021-05-18 00:00:00",
+  "hits": 33,
+  "took_ms": 29,
+  "data": [
+    {
+      "id": "1391510298100527105",
+      "author": "Newshub",
+      "text": "Passengers evacuated from Air NZ flight after smoke alarm sparks emergency response https://t.co/HUwOXpnRdI",
+      "sentiment": "negative",
+      "meta": {
+        "hashtags": [],
+        "urls": [
+          {
+            "url": "https://t.co/HUwOXpnRdI",
+            "expanded_url": "http://dlvr.it/RzPbJ9",
+            "display_url": "dlvr.it/RzPbJ9",
+            "indices": [
+              84,
+              107
             ]
-          },
-          "created": "2021-05-16T01:22:46",
-          "platform": "twitter"
-        },
-        {
-          "id": "1393739844900192263",
-          "author": "Cath+Eady",
-          "text": "RT @BrinRudkin: @JoelMacManus For a laugh? There were sick, terminally ill children on board. For some this will be the highlight of their…",
-          "sentiment": "positive",
-          "meta": {
-            "hashtags": [],
-            "urls": []
-          },
-          "created": "2021-05-16T01:27:28",
-          "platform": "twitter"
-        },
-        {
-          "id": "1393766051381354500",
-          "author": "first cow responder",
-          "text": "I get that Air NZ is committed to putting D-grade NZ celebs in their cringe safety videos but even I was a little t… https://t.co/86WOpaYicM",
-          "sentiment": "negative",
-          "meta": {
-            "hashtags": [],
-            "urls": [
-              {
-                "url": "https://t.co/86WOpaYicM",
-                "expanded_url": "https://twitter.com/i/web/status/1393766051381354500",
-                "display_url": "twitter.com/i/web/status/1…",
-                "indices": [
-                  117,
-                  140
-                ]
-              }
+          }
+        ]
+      },
+      "created": "2021-05-09T21:48:02",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393425166382690306",
+      "author": "RNZ News",
+      "text": "Air New Zealand organises mystery flight for Koru Care kids https://t.co/z2uF6xmiJ1",
+      "sentiment": "positive",
+      "meta": {
+        "hashtags": [],
+        "urls": [
+          {
+            "url": "https://t.co/z2uF6xmiJ1",
+            "expanded_url": "https://www.rnz.co.nz/news/national/442636/air-new-zealand-organises-mystery-flight-for-koru-care-kids",
+            "display_url": "rnz.co.nz/news/national/…",
+            "indices": [
+              60,
+              83
             ]
-          },
-          "created": "2021-05-16T03:11:36",
-          "platform": "twitter"
+          }
+        ]
+      },
+      "created": "2021-05-15T04:37:02",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393425704029589509",
+      "author": "1 NEWS",
+      "text": "Air New Zealand charity takes 50 kids on a kiwi-tracing mystery adventure\nhttps://t.co/PNlfld4SWM https://t.co/Z8aGrikTCO",
+      "sentiment": "positive",
+      "meta": {
+        "hashtags": [],
+        "urls": [
+          {
+            "url": "https://t.co/PNlfld4SWM",
+            "expanded_url": "https://www.tvnz.co.nz/one-news/new-zealand/air-new-zealand-charity-takes-50-special-kids-kiwi-tracing-mystery-adventure",
+            "display_url": "tvnz.co.nz/one-news/new-z…",
+            "indices": [
+              74,
+              97
+            ]
+          }
+        ]
+      },
+      "created": "2021-05-15T04:39:11",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393446044596383748",
+      "author": "RNZ",
+      "text": "Meeting All Blacks, posing for superhero portraits and a first-ever flight ensured a day to remember for some Koru… https://t.co/B7uafV5Tyu",
+      "sentiment": "positive",
+      "meta": {
+        "hashtags": [],
+        "urls": [
+          {
+            "url": "https://t.co/B7uafV5Tyu",
+            "expanded_url": "https://twitter.com/i/web/status/1393446044596383748",
+            "display_url": "twitter.com/i/web/status/1…",
+            "indices": [
+              116,
+              139
+            ]
+          }
+        ]
+      },
+      "created": "2021-05-15T06:00:00",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393475460491661314",
+      "author": "News SummedUp NZ",
+      "text": "Air NZ organises mystery flight for Koru Care kids\n https://t.co/kO9vQb5BEy",
+      "sentiment": "negative",
+      "created": "2021-05-15T07:56:53",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393480577068666881",
+      "author": "Glen Towler📷",
+      "text": "Fifty lucky children get to fly over New Zealand during a special flight in Boeing 787-9 https://t.co/sJWFKYobOA Isn't Air NZ nice. #Avgeek",
+      "sentiment": "negative",
+      "created": "2021-05-15T08:17:13",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393481241526095872",
+      "author": "Economissive",
+      "text": "1st- Air NZ's domestic emissions are covered by the ETS. Air NZ will have credits to cover this flight. Credits tha… https://t.co/wjQx64CzQU",
+      "sentiment": "positive",
+      "created": "2021-05-15T08:19:52",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393499969957498882",
+      "author": "Graeme Edgeler",
+      "text": "RT @Economissive: 1st- Air NZ's domestic emissions are covered by the ETS. Air NZ will have credits to cover this flight. Credits that mean…",
+      "sentiment": "positive",
+      "created": "2021-05-15T09:34:17",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393509460119748610",
+      "author": "Jamie Clumpas",
+      "text": "RT @Economissive: 1st- Air NZ's domestic emissions are covered by the ETS. Air NZ will have credits to cover this flight. Credits that mean…",
+      "sentiment": "positive",
+      "created": "2021-05-15T10:12:00",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393510064820916232",
+      "author": "Selina Street",
+      "text": "RT @libertyscott: Journalist concerned about climate change doesn't understand climate change policy (Air NZ has to emit less to offset thi…",
+      "sentiment": "negative",
+      "created": "2021-05-15T10:14:24",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393510934140780544",
+      "author": "Jack Wynne",
+      "text": "RT @Economissive: 1st- Air NZ's domestic emissions are covered by the ETS. Air NZ will have credits to cover this flight. Credits that mean…",
+      "sentiment": "positive",
+      "created": "2021-05-15T10:17:51",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393522140649906179",
+      "author": "John Macilree",
+      "text": "RT @Economissive: 1st- Air NZ's domestic emissions are covered by the ETS. Air NZ will have credits to cover this flight. Credits that mean…",
+      "sentiment": "positive",
+      "created": "2021-05-15T11:02:23",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393523515500814342",
+      "author": "James Meager",
+      "text": "RT @Economissive: 1st- Air NZ's domestic emissions are covered by the ETS. Air NZ will have credits to cover this flight. Credits that mean…",
+      "sentiment": "positive",
+      "created": "2021-05-15T11:07:51",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393540094787678210",
+      "author": "Wellington Commuter",
+      "text": "RT @Economissive: 1st- Air NZ's domestic emissions are covered by the ETS. Air NZ will have credits to cover this flight. Credits that mean…",
+      "sentiment": "positive",
+      "meta": {
+        "hashtags": [],
+        "urls": []
+      },
+      "created": "2021-05-15T12:13:43",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393699402418589702",
+      "author": "Jon D",
+      "text": "RT @BrinRudkin: @JoelMacManus For a laugh? There were sick, terminally ill children on board. For some this will be the highlight of their…",
+      "sentiment": "positive",
+      "meta": {
+        "hashtags": [],
+        "urls": []
+      },
+      "created": "2021-05-15T22:46:45",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393727186927030272",
+      "author": "Birder",
+      "text": "RT @BrinRudkin: @JoelMacManus For a laugh? There were sick, terminally ill children on board. For some this will be the highlight of their…",
+      "sentiment": "positive",
+      "meta": {
+        "hashtags": [],
+        "urls": []
+      },
+      "created": "2021-05-16T00:37:10",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393738665138946052",
+      "author": "Paola 🌅",
+      "text": "Using some of our Air NZ credits,...still have over $2000 left and the Airpoints $ stacking up. Feel a trip to sunn… https://t.co/LgCQuFjJbV",
+      "sentiment": "negative",
+      "meta": {
+        "hashtags": [],
+        "urls": [
+          {
+            "url": "https://t.co/LgCQuFjJbV",
+            "expanded_url": "https://twitter.com/i/web/status/1393738665138946052",
+            "display_url": "twitter.com/i/web/status/1…",
+            "indices": [
+              117,
+              140
+            ]
+          }
+        ]
+      },
+      "created": "2021-05-16T01:22:46",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393739844900192263",
+      "author": "Cath+Eady",
+      "text": "RT @BrinRudkin: @JoelMacManus For a laugh? There were sick, terminally ill children on board. For some this will be the highlight of their…",
+      "sentiment": "positive",
+      "meta": {
+        "hashtags": [],
+        "urls": []
+      },
+      "created": "2021-05-16T01:27:28",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393766051381354500",
+      "author": "first cow responder",
+      "text": "I get that Air NZ is committed to putting D-grade NZ celebs in their cringe safety videos but even I was a little t… https://t.co/86WOpaYicM",
+      "sentiment": "negative",
+      "meta": {
+        "hashtags": [],
+        "urls": [
+          {
+            "url": "https://t.co/86WOpaYicM",
+            "expanded_url": "https://twitter.com/i/web/status/1393766051381354500",
+            "display_url": "twitter.com/i/web/status/1…",
+            "indices": [
+              117,
+              140
+            ]
+          }
+        ]
+      },
+      "created": "2021-05-16T03:11:36",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393767729304244230",
+      "author": "Libertyscott",
+      "text": "Air NZ, as a majority state owned company, will find this perplexing, as will Kiwirail, as will the RNZAF and RNZN,… https://t.co/B89OYjWXqA",
+      "sentiment": "negative",
+      "meta": {
+        "hashtags": [],
+        "urls": [
+          {
+            "url": "https://t.co/B89OYjWXqA",
+            "expanded_url": "https://twitter.com/i/web/status/1393767729304244230",
+            "display_url": "twitter.com/i/web/status/1…",
+            "indices": [
+              117,
+              140
+            ]
+          }
+        ]
+      },
+      "created": "2021-05-16T03:18:16",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393769895737786369",
+      "author": "SustainabilityTrends",
+      "text": "RT @libertyscott: Air NZ, as a majority state owned company, will find this perplexing, as will Kiwirail, as will the RNZAF and RNZN, and t…",
+      "sentiment": "negative",
+      "meta": {
+        "hashtags": [],
+        "urls": []
+      },
+      "created": "2021-05-16T03:26:52",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393771592195268617",
+      "author": "The Scanning annikakes🇳🇿",
+      "text": "How Air NZ intends to board my 15:45 flight at 15:43 and still have us on time is beyond me. 🤷🏻‍♀️",
+      "sentiment": "negative",
+      "meta": {
+        "hashtags": [],
+        "urls": []
+      },
+      "created": "2021-05-16T03:33:37",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393775263058513920",
+      "author": "clueless",
+      "text": "s/o to the lady on the air nz flight who complimented my slippers, like ong just be my friend 🧎🏽‍♀️",
+      "sentiment": "negative",
+      "meta": {
+        "hashtags": [],
+        "urls": []
+      },
+      "created": "2021-05-16T03:48:12",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393802403045023747",
+      "author": "Mark Hubbard",
+      "text": "RT @libertyscott: Air NZ, as a majority state owned company, will find this perplexing, as will Kiwirail, as will the RNZAF and RNZN, and t…",
+      "sentiment": "negative",
+      "meta": {
+        "hashtags": [],
+        "urls": []
+      },
+      "created": "2021-05-16T05:36:03",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393818119987097606",
+      "author": "Neville Vedder (own your own history)",
+      "text": "RT @BrinRudkin: @JoelMacManus For a laugh? There were sick, terminally ill children on board. For some this will be the highlight of their…",
+      "sentiment": "positive",
+      "meta": {
+        "hashtags": [],
+        "urls": []
+      },
+      "created": "2021-05-16T06:38:30",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393820057025748995",
+      "author": "Dr Bex",
+      "text": "oh look, this abled bodied person who isn't terminally ill wants to police what treats and special events terminall… https://t.co/RgjtygFfnv",
+      "sentiment": "negative",
+      "meta": {
+        "hashtags": [],
+        "urls": [
+          {
+            "url": "https://t.co/RgjtygFfnv",
+            "expanded_url": "https://twitter.com/i/web/status/1393820057025748995",
+            "display_url": "twitter.com/i/web/status/1…",
+            "indices": [
+              117,
+              140
+            ]
+          }
+        ]
+      },
+      "created": "2021-05-16T06:46:12",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393821056427831296",
+      "author": "Charmaine",
+      "text": "RT @LetsKeepMoving2: Leaky building crisis $48b\nEmergency motel costs $1b\nFire sale of statehouses shares in Air NZ and power companies $5.…",
+      "sentiment": "negative",
+      "meta": {
+        "hashtags": [],
+        "urls": []
+      },
+      "created": "2021-05-16T06:50:10",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393823772365398020",
+      "author": "Larry stands with the Palestinians",
+      "text": "RT @BexGraham: oh look, this abled bodied person who isn't terminally ill wants to police what treats and special events terminally ill and…",
+      "sentiment": "negative",
+      "meta": {
+        "hashtags": [],
+        "urls": []
+      },
+      "created": "2021-05-16T07:00:57",
+      "platform": "twitter"
+    },
+    {
+      "id": "1393953641015427077",
+      "author": "Terrence Daniels (Captain 🍀 Planet)",
+      "text": "Have I told you how much I Love Living in New Zealand? \n\nAir NZ just took fifty children with disabilities on their… https://t.co/QZ7WHO8pti",
+      "sentiment": "positive",
+      "meta": {
+        "hashtags": [],
+        "urls": [
+          {
+            "url": "https://t.co/QZ7WHO8pti",
+            "expanded_url": "https://twitter.com/i/web/status/1393953641015427077",
+            "display_url": "twitter.com/i/web/status/1…",
+            "indices": [
+              117,
+              140
+            ]
+          }
+        ]
+      },
+      "created": "2021-05-16T15:37:01",
+      "platform": "twitter"
+    },
+    {
+      "id": "1394048159836303362",
+      "author": "Newshub",
+      "text": "Flying kiwi takes to the sky for magical Dreamliner flight https://t.co/wYi6dw2xSY",
+      "sentiment": "positive",
+      "meta": {
+        "hashtags": [],
+        "urls": [
+          {
+            "url": "https://t.co/wYi6dw2xSY",
+            "expanded_url": "http://dlvr.it/RzmycT",
+            "display_url": "dlvr.it/RzmycT",
+            "indices": [
+              59,
+              82
+            ]
+          }
+        ]
+      },
+      "created": "2021-05-16T21:52:36",
+      "platform": "twitter"
+    },
+    {
+      "id": "1394053532949520389",
+      "author": "RNZ",
+      "text": "Cook Islands tourism operators and businesses say they are primed for a return of Kiwi visitors after this week's b… https://t.co/p7QXh1l9ZZ",
+      "sentiment": "negative",
+      "meta": {
+        "hashtags": [],
+        "urls": [
+          {
+            "url": "https://t.co/p7QXh1l9ZZ",
+            "expanded_url": "https://twitter.com/i/web/status/1394053532949520389",
+            "display_url": "twitter.com/i/web/status/1…",
+            "indices": [
+              117,
+              140
+            ]
+          }
+        ]
+      },
+      "created": "2021-05-16T22:13:57",
+      "platform": "twitter"
+    },
+    {
+      "id": "1394078846727585792",
+      "author": "AustFrequentFlyer",
+      "text": "Trans-tasman Gold/Elite Benefits Worth it?: Hi Guys, Need to make a few trips over the ditch over the coming weeks… https://t.co/JVA4DzZ7Kx",
+      "sentiment": "positive",
+      "meta": {
+        "hashtags": [],
+        "urls": [
+          {
+            "url": "https://t.co/JVA4DzZ7Kx",
+            "expanded_url": "https://twitter.com/i/web/status/1394078846727585792",
+            "display_url": "twitter.com/i/web/status/1…",
+            "indices": [
+              116,
+              139
+            ]
+          }
+        ]
+      },
+      "created": "2021-05-16T23:54:32",
+      "platform": "twitter"
+    },
+    {
+      "id": "1394092519793647617",
+      "author": "Joeli Jason Ditoka",
+      "text": "RT @abdulmshaheed: While the coup was happening in Suva, an airport worker in Nadi, Amjad Ali, hijacked an Air NZ Boeing 747 aircraft on th…",
+      "sentiment": "negative",
+      "meta": {
+        "hashtags": [],
+        "urls": []
+      },
+      "created": "2021-05-17T00:48:52",
+      "platform": "twitter"
+    }
+  ],
+  "aggregation": [
+    {
+      "sentiment": "positive",
+      "total_count": 17,
+      "days": [
+        {
+          "created": "2021-05-15T00:00:00.000Z",
+          "count": 11
+        },
+        {
+          "created": "2021-05-16T00:00:00.000Z",
+          "count": 6
+        }
+      ]
+    },
+    {
+      "sentiment": "negative",
+      "total_count": 16,
+      "days": [
+        {
+          "created": "2021-05-09T00:00:00.000Z",
+          "count": 1
+        },
+        {
+          "created": "2021-05-10T00:00:00.000Z",
+          "count": 0
+        },
+        {
+          "created": "2021-05-11T00:00:00.000Z",
+          "count": 0
+        },
+        {
+          "created": "2021-05-12T00:00:00.000Z",
+          "count": 0
+        },
+        {
+          "created": "2021-05-13T00:00:00.000Z",
+          "count": 0
+        },
+        {
+          "created": "2021-05-14T00:00:00.000Z",
+          "count": 0
+        },
+        {
+          "created": "2021-05-15T00:00:00.000Z",
+          "count": 3
+        },
+        {
+          "created": "2021-05-16T00:00:00.000Z",
+          "count": 11
+        },
+        {
+          "created": "2021-05-17T00:00:00.000Z",
+          "count": 1
         }
       ]
     }
+  ]
+}
