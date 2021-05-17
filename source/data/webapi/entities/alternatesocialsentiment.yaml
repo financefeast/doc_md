@@ -1,0 +1,118 @@
+spec:
+  - name: ticker
+    type: string
+    desc: |
+      A stock ticker
+  - name: company_name
+    type: string
+    desc: |
+      Company name for stock
+  - name: exchange
+    type: string
+    desc: |
+      Exchange stock ticker is member of
+  - name: uuid4
+    type: string
+    desc: |
+      Stock uuid4 unique string
+  - name: date_from
+    type: string
+    desc: |
+      Date range start
+  - name: date_to
+    type: string
+    desc: |
+      Date range end
+  - name: hits
+    type: integer
+    desc: |
+      Number of records returned
+  - name: took_ms
+    type: integer
+    desc: |
+      Number of milliseconds in server processing time
+  - name: data
+    type: list
+    desc: |
+      A list of social media with sentiment posts
+example: |
+  {
+    "ticker": "air.nz",
+    "company_name": "Air New Zealand",
+    "exchange": "",
+    "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
+    "date_from": "2021-05-16 00:00:00",
+    "date_to": "2021-05-17 00:00:00",
+    "hits": 17,
+    "took_ms": 15,
+    "data": [
+        {
+          "id": "1393727186927030272",
+          "author": "Birder",
+          "text": "RT @BrinRudkin: @JoelMacManus For a laugh? There were sick, terminally ill children on board. For some this will be the highlight of their…",
+          "sentiment": "positive",
+          "meta": {
+            "hashtags": [],
+            "urls": []
+          },
+          "created": "2021-05-16T00:37:10",
+          "platform": "twitter"
+        },
+        {
+          "id": "1393738665138946052",
+          "author": "Paola 🌅",
+          "text": "Using some of our Air NZ credits,...still have over $2000 left and the Airpoints $ stacking up. Feel a trip to sunn… https://t.co/LgCQuFjJbV",
+          "sentiment": "negative",
+          "meta": {
+            "hashtags": [],
+            "urls": [
+              {
+                "url": "https://t.co/LgCQuFjJbV",
+                "expanded_url": "https://twitter.com/i/web/status/1393738665138946052",
+                "display_url": "twitter.com/i/web/status/1…",
+                "indices": [
+                  117,
+                  140
+                ]
+              }
+            ]
+          },
+          "created": "2021-05-16T01:22:46",
+          "platform": "twitter"
+        },
+        {
+          "id": "1393739844900192263",
+          "author": "Cath+Eady",
+          "text": "RT @BrinRudkin: @JoelMacManus For a laugh? There were sick, terminally ill children on board. For some this will be the highlight of their…",
+          "sentiment": "positive",
+          "meta": {
+            "hashtags": [],
+            "urls": []
+          },
+          "created": "2021-05-16T01:27:28",
+          "platform": "twitter"
+        },
+        {
+          "id": "1393766051381354500",
+          "author": "first cow responder",
+          "text": "I get that Air NZ is committed to putting D-grade NZ celebs in their cringe safety videos but even I was a little t… https://t.co/86WOpaYicM",
+          "sentiment": "negative",
+          "meta": {
+            "hashtags": [],
+            "urls": [
+              {
+                "url": "https://t.co/86WOpaYicM",
+                "expanded_url": "https://twitter.com/i/web/status/1393766051381354500",
+                "display_url": "twitter.com/i/web/status/1…",
+                "indices": [
+                  117,
+                  140
+                ]
+              }
+            ]
+          },
+          "created": "2021-05-16T03:11:36",
+          "platform": "twitter"
+        }
+      ]
+    }
