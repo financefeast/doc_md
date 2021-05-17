@@ -1,0 +1,42 @@
+spec:
+  - name: hits
+    type: integer
+    desc: |
+      Number of records returned
+  - name: took_ms
+    type: integer
+    desc: |
+      Number of milliseconds in server processing time
+  - name: data
+    type: list
+    desc: |
+      A list of social media platforms-
+  - name: symbol
+    type: string
+    desc: |
+      A platform symbol
+  - name: name
+    type: string
+    desc: |
+      Platform name
+  - name: uuid
+    type: string
+    desc: |
+      Uuid4 unique string
+example: |
+  {
+    "hits": 103,
+    "took_ms": 0,
+    "data": [
+      {
+        "symbol": "twitter",
+        "name": "Twitter",
+        "uuid4": "b6391daf-06de-4e74-9401-bed0e93be16d"
+      },
+      {
+        "symbol": "reddit",
+        "name": "Reddit",
+        "uuid4": "222ec3b0-449f-4c9d-9f72-7ee9b61e3ec0"
+      }
+    ]
+  }
