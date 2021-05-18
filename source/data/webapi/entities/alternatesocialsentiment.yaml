@@ -1,0 +1,226 @@
+spec:
+  - name: ticker
+    type: string
+    desc: |
+      A stock ticker
+  - name: company_name
+    type: string
+    desc: |
+      Company name for stock
+  - name: exchange
+    type: string
+    desc: |
+      Exchange stock ticker is member of
+  - name: uuid4
+    type: string
+    desc: |
+      Stock uuid4 unique string
+  - name: date_from
+    type: string
+    desc: |
+      Date range start
+  - name: date_to
+    type: string
+    desc: |
+      Date range end
+  - name: hits
+    type: integer
+    desc: |
+      Number of records returned
+  - name: took_ms
+    type: integer
+    desc: |
+      Number of milliseconds in server processing time
+  - name: data
+    type: list
+    desc: |
+      A list of social media with sentiment posts
+  - name: aggregation
+    type: list
+    desc: |
+      A list of sentiments aggregated into days with count per day
+example: |
+  {
+    "ticker": "air.nz",
+    "company_name": "Air New Zealand",
+    "exchange": "",
+    "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
+    "date_from": "2021-05-01 00:00:00",
+    "date_to": "2021-05-18 00:00:00",
+    "hits": 33,
+    "took_ms": 29,
+    "data": [
+      {
+        "id": "1391510298100527105",
+        "author": "Newshub",
+        "text": "Passengers evacuated from Air NZ flight after smoke alarm sparks emergency response https://t.co/HUwOXpnRdI",
+        "sentiment": "negative",
+        "meta": {
+          "hashtags": [],
+          "urls": [
+            {
+              "url": "https://t.co/HUwOXpnRdI",
+              "expanded_url": "http://dlvr.it/RzPbJ9",
+              "display_url": "dlvr.it/RzPbJ9",
+              "indices": [
+                84,
+                107
+              ]
+            }
+          ]
+        },
+        "created": "2021-05-09T21:48:02",
+        "platform": "twitter"
+      },
+      {
+        "id": "1393727186927030272",
+        "author": "Birder",
+        "text": "RT @BrinRudkin: @JoelMacManus For a laugh? There were sick, terminally ill children on board. For some this will be the highlight of their…",
+        "sentiment": "positive",
+        "meta": {
+          "hashtags": [],
+          "urls": []
+        },
+        "created": "2021-05-16T00:37:10",
+        "platform": "twitter"
+      },
+      {
+        "id": "1393821056427831296",
+        "author": "Charmaine",
+        "text": "RT @LetsKeepMoving2: Leaky building crisis $48b\nEmergency motel costs $1b\nFire sale of statehouses shares in Air NZ and power companies $5.…",
+        "sentiment": "negative",
+        "meta": {
+          "hashtags": [],
+          "urls": []
+        },
+        "created": "2021-05-16T06:50:10",
+        "platform": "twitter"
+      },
+      {
+        "id": "1393823772365398020",
+        "author": "Larry stands with the Palestinians",
+        "text": "RT @BexGraham: oh look, this abled bodied person who isn't terminally ill wants to police what treats and special events terminally ill and…",
+        "sentiment": "negative",
+        "meta": {
+          "hashtags": [],
+          "urls": []
+        },
+        "created": "2021-05-16T07:00:57",
+        "platform": "twitter"
+      },
+      {
+        "id": "1393953641015427077",
+        "author": "Terrence Daniels (Captain 🍀 Planet)",
+        "text": "Have I told you how much I Love Living in New Zealand? \n\nAir NZ just took fifty children with disabilities on their… https://t.co/QZ7WHO8pti",
+        "sentiment": "positive",
+        "meta": {
+          "hashtags": [],
+          "urls": [
+            {
+              "url": "https://t.co/QZ7WHO8pti",
+              "expanded_url": "https://twitter.com/i/web/status/1393953641015427077",
+              "display_url": "twitter.com/i/web/status/1…",
+              "indices": [
+                117,
+                140
+              ]
+            }
+          ]
+        },
+        "created": "2021-05-16T15:37:01",
+        "platform": "twitter"
+      },
+      {
+        "id": "1394078846727585792",
+        "author": "AustFrequentFlyer",
+        "text": "Trans-tasman Gold/Elite Benefits Worth it?: Hi Guys, Need to make a few trips over the ditch over the coming weeks… https://t.co/JVA4DzZ7Kx",
+        "sentiment": "positive",
+        "meta": {
+          "hashtags": [],
+          "urls": [
+            {
+              "url": "https://t.co/JVA4DzZ7Kx",
+              "expanded_url": "https://twitter.com/i/web/status/1394078846727585792",
+              "display_url": "twitter.com/i/web/status/1…",
+              "indices": [
+                116,
+                139
+              ]
+            }
+          ]
+        },
+        "created": "2021-05-16T23:54:32",
+        "platform": "twitter"
+      },
+      {
+        "id": "1394092519793647617",
+        "author": "Joeli Jason Ditoka",
+        "text": "RT @abdulmshaheed: While the coup was happening in Suva, an airport worker in Nadi, Amjad Ali, hijacked an Air NZ Boeing 747 aircraft on th…",
+        "sentiment": "negative",
+        "meta": {
+          "hashtags": [],
+          "urls": []
+        },
+        "created": "2021-05-17T00:48:52",
+        "platform": "twitter"
+      }
+    ],
+    "aggregation": [
+      {
+        "sentiment": "positive",
+        "total_count": 17,
+        "days": [
+          {
+            "created": "2021-05-15T00:00:00.000Z",
+            "count": 11
+          },
+          {
+            "created": "2021-05-16T00:00:00.000Z",
+            "count": 6
+          }
+        ]
+      },
+      {
+        "sentiment": "negative",
+        "total_count": 16,
+        "days": [
+          {
+            "created": "2021-05-09T00:00:00.000Z",
+            "count": 1
+          },
+          {
+            "created": "2021-05-10T00:00:00.000Z",
+            "count": 0
+          },
+          {
+            "created": "2021-05-11T00:00:00.000Z",
+            "count": 0
+          },
+          {
+            "created": "2021-05-12T00:00:00.000Z",
+            "count": 0
+          },
+          {
+            "created": "2021-05-13T00:00:00.000Z",
+            "count": 0
+          },
+          {
+            "created": "2021-05-14T00:00:00.000Z",
+            "count": 0
+          },
+          {
+            "created": "2021-05-15T00:00:00.000Z",
+            "count": 3
+          },
+          {
+            "created": "2021-05-16T00:00:00.000Z",
+            "count": 11
+          },
+          {
+            "created": "2021-05-17T00:00:00.000Z",
+            "count": 1
+          }
+        ]
+      }
+    ]
+  }

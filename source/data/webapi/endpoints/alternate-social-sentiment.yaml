@@ -1,0 +1,35 @@
+endpoints:
+  /alternate/social_sentiment:
+    GET:
+      title: Get social media posts with sentiment
+      summary: |
+        Returns social media posts for various social media platforms with a sentiment rating, either positive or negative.
+      params:
+        query:
+          - name: ticker
+            type: string
+            required: true
+            desc: stock ticker or uuid4
+          - name: date_from
+            type: string
+            required: false
+            desc: a date string in YYY-MM-DD format as start of date range
+          - name: date_to
+            type: string
+            required: false
+            desc: a date string in YYY-MM-DD format as endof date range
+          - name: exchange
+            type: string
+            required: false
+            desc: exchange that the stock ticker if a member of
+          - name: platform
+            type: string
+            required: false
+            desc: limit search to a social media platform
+      returns: |
+        [EOD](#alternatesocialsentiment-entity) object
+      errors:
+        - status: 403
+          reason: not authenticated
+        - status: 404
+          reason: the ticker is not found
