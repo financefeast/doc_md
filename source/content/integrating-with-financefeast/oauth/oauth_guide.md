@@ -17,7 +17,7 @@ Financefeast uses [`OAuth2`] as the framework to authorize Financefeast customer
 * [Best Practices]({{< relref "#best-practices" >}})
 
 ## Terms of Access and Use
-
+ 
 * You must read the terms and create a new client in order to connect and use Financefeast's APIs
 * All API clients must authenticate with OAuth 2.0.
 * You may not imply that the app was developed by Financefeast.
