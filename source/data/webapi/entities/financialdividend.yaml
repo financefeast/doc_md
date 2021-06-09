@@ -37,25 +37,46 @@ spec:
       A list of dividend records
 example: |
   {
-    "ticker": "air.nz",
-    "company_name": "Air New Zealand",
+    "ticker": "arg.nz",
+    "company_name": "Argosy Property Lt",
     "exchange": "",
-    "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
-    "date_from": "2020-01-01 00:00:00",
-    "date_to": "2020-12-31 00:00:00",
-    "hits": 1,
-    "took_ms": 8,
+    "uuid4": "7d539a2f-2f73-4497-8ddb-25882d05e7bc",
+    "date_from": "2021-01-01 00:00:00",
+    "date_to": "2021-12-31 00:00:00",
+    "hits": 2,
+    "took_ms": 10,
     "data": [
       {
-        "symbol": "AIR.NZ",
-        "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
+        "symbol": "ARG.NZ",
+        "uuid4": "7d539a2f-2f73-4497-8ddb-25882d05e7bc",
         "exchange": "nzx",
-        "created": "2021-05-05T20:03:44.160066",
-        "date": "2020-03-11",
-        "year": "2020",
+        "created": "2021-06-07T00:00:00",
         "data": {
-          "dividend": 0.11
+          "amount": 0.016125
         }
+      },
+      {
+        "announcement_date": "2021-05-19",
+        "payment_date": "2021-06-23",
+        "last_modified_date": "2021-05-19",
+        "status": "Pending",
+        "data": {
+          "payment_date": "2021-06-23",
+          "amount": "0.016125",
+          "withholding_tax": "0.0",
+          "supplementary_amount": "0.0",
+          "dividend_period": "Final Dividend",
+          "comment": "",
+          "units": "000000001",
+          "currency_code": "NZD",
+          "exchange_rate": "0.0",
+          "option_type": "Cash component only",
+          "payment": "Shareholder Receive Payment"
+        },
+        "symbol": "ARG.NZ",
+        "uuid4": "7d539a2f-2f73-4497-8ddb-25882d05e7bc",
+        "exchange": "nzx",
+        "created": "2021-06-09T07:58:34.581783"
       }
     ]
   }

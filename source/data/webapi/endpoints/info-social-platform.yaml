@@ -1,5 +1,5 @@
 endpoints:
-  /info/social_platform:
+  /info/social-platform:
     GET:
       title: Get a list of social media platforms
       summary: |

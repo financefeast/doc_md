@@ -1,5 +1,5 @@
 endpoints:
-  /alternate/social_sentiment:
+  /alternate/social-sentiment:
     GET:
       title: Get social media posts with sentiment
       summary: |
