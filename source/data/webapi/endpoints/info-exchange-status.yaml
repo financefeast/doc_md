@@ -1,0 +1,10 @@
+endpoints:
+  /info/exchange/status:
+    GET:
+      title: Get a list of exchange statuses
+      summary: |
+        Returns a list of statuses for supported exchanges
+      params:
+        path:
+      returns: |
+        [Exchange](#infoexchangestatus-entity) object

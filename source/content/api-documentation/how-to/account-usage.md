@@ -4,7 +4,7 @@ weight: 90
 ---
 
 ## List and Count Endpoints Called
-By sending a GET request to our [`/account/usage']({{< relref "/api-documentation/api-v1/account/account-usage.md" >}}) endpoint you
+By sending a GET request to our [`/account/usage`]({{< relref "/api-documentation/api-v1/account/account-usage.md" >}}) endpoint you
 will get a list of all the authenticated endpoints you have called for the date range passed. By default, a month will be returned.
 
 {{< safe-html >}}
