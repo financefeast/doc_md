@@ -48,56 +48,57 @@ spec:
     desc: |
       The stochastic oscillator fast signal
 example: |
-  {
-    "ticker": "air.nz",
-    "company_name": "Air New Zealand",
-    "exchange": "",
-    "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
-    "date_from": "2020-04-01 00:00:00",
-    "date_to": "2021-05-03 09:58:15.892584",
-    "interval": "1:00:00",
-    "hits": 766,
-    "took_ms": 237,
-    "data": [
-        {
-          "timestamp": "2021-04-08T10:00:00",
-          "close": 1.84,
-          "open": 1.825,
-          "high": 1.84,
-          "low": 1.815,
-          "volume": 244816,
-          "stoch_k": 72.2222222222223,
-          "stoch_d": 81.96881091617944
-        },
-        {
-          "timestamp": "2021-04-08T11:00:00",
-          "close": 1.815,
-          "open": 1.84,
-          "high": 1.84,
-          "low": 1.815,
-          "volume": 90858,
-          "stoch_k": 57.14285714285712,
-          "stoch_d": 71.19186856028966
-        },
-        {
-          "timestamp": "2021-04-08T12:00:00",
-          "close": 1.825,
-          "open": 1.815,
-          "high": 1.825,
-          "low": 1.815,
-          "volume": 15828,
-          "stoch_k": 61.764705882352956,
-          "stoch_d": 63.70992841581079
-        },
-        {
-          "timestamp": "2021-04-08T12:09:59",
-          "close": 1.82,
-          "open": 1.82,
-          "high": 1.82,
-          "low": 1.82,
-          "volume": 0,
-          "stoch_k": 58.82352941176478,
-          "stoch_d": 59.24369747899161
-        }
-    ]
-  }
+{
+  "ticker": "air.nz",
+  "company_name": "Air New Zealand",
+  "exchange": "",
+  "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
+  "date_from": "2021-05-01 00:00:00",
+  "date_to": "2021-06-10 08:56:49.408471",
+  "interval": "1:00:00",
+  "hits": 111,
+  "took_ms": 20,
+  "data": [
+{
+  "ticker": "air.nz",
+  "company_name": "Air New Zealand",
+  "exchange": "",
+  "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
+  "date_from": "2021-06-01 00:00:00",
+  "date_to": "2021-06-10 08:58:39.820222",
+  "interval": "1:00:00",
+  "hits": 3,
+  "took_ms": 15,
+  "data": [
+    {
+      "timestamp": "2021-06-01T10:00:00",
+      "close": 1.665,
+      "open": 1.67,
+      "high": 1.67,
+      "low": 1.665,
+      "volume": 24103,
+      "stoch_d": 14.285665628980729,
+      "stoch_k": 42.856996886942184
+    },
+    {
+      "timestamp": "2021-06-01T11:00:00",
+      "close": 1.655,
+      "open": 1.665,
+      "high": 1.665,
+      "low": 1.655,
+      "volume": 140405,
+      "stoch_d": 19.047554171974305,
+      "stoch_k": 14.285665628980729
+    },
+    {
+      "timestamp": "2021-06-01T12:00:00",
+      "close": 1.66,
+      "open": 1.655,
+      "high": 1.66,
+      "low": 1.655,
+      "volume": 6984,
+      "stoch_d": 28.571331257961457,
+      "stoch_k": 28.571331257961457
+    }
+  ]
+}

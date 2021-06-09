@@ -48,56 +48,46 @@ spec:
     desc: |
       The bollinger band upper
 example: |
-  {
-    "ticker": "air.nz",
-    "company_name": "Air New Zealand",
-    "exchange": "",
-    "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
-    "date_from": "2020-04-01 00:00:00",
-    "date_to": "2021-05-03 09:58:15.892584",
-    "interval": "1:00:00",
-    "hits": 766,
-    "took_ms": 237,
-    "data": [
-       {
-          "timestamp": "2021-04-09T12:10:13",
-          "close": 1.83,
-          "open": 1.83,
-          "high": 1.83,
-          "low": 1.83,
-          "volume": 0,
-          "bollinger_l": 1.7225830319474487,
-          "bollinger_u": 1.9069169680525515
-        },
-        {
-          "timestamp": "2021-04-12T10:00:00",
-          "close": 1.83,
-          "open": 1.825,
-          "high": 1.835,
-          "low": 1.825,
-          "volume": 150250,
-          "bollinger_l": 1.7335601522932846,
-          "bollinger_u": 1.904939847706715
-        },
-        {
-          "timestamp": "2021-04-12T11:00:00",
-          "close": 1.835,
-          "open": 1.83,
-          "high": 1.835,
-          "low": 1.815,
-          "volume": 115561,
-          "bollinger_l": 1.7490745401074672,
-          "bollinger_u": 1.8999254598925328
-        },
-        {
-          "timestamp": "2021-04-12T12:00:00",
-          "close": 1.82,
-          "open": 1.84,
-          "high": 1.84,
-          "low": 1.82,
-          "volume": 11652,
-          "bollinger_l": 1.7653563883344696,
-          "bollinger_u": 1.8921436116655301
-        }
-    ]
-  }
+{
+  "ticker": "air.nz",
+  "company_name": "Air New Zealand",
+  "exchange": "",
+  "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
+  "date_from": "2021-06-01 00:00:00",
+  "date_to": "2021-06-10 09:04:32.772280",
+  "interval": "1:00:00",
+  "hits": 27,
+  "took_ms": 10,
+  "data": [
+    {
+      "timestamp": "2021-06-09T11:00:00+12:00",
+      "close": 1.67,
+      "open": 1.66,
+      "high": 1.67,
+      "low": 1.65,
+      "volume": 21994,
+      "bollinger_l": 1.66,
+      "bollinger_u": 1.69
+    },
+    {
+      "timestamp": "2021-06-09T12:00:00+12:00",
+      "close": 1.66,
+      "open": 1.66,
+      "high": 1.67,
+      "low": 1.65,
+      "volume": 46092,
+      "bollinger_l": 1.65,
+      "bollinger_u": 1.69
+    },
+    {
+      "timestamp": "2021-06-09T12:05:27+12:00",
+      "close": 1.66,
+      "open": 1.66,
+      "high": 1.66,
+      "low": 1.66,
+      "volume": 0,
+      "bollinger_l": 1.65,
+      "bollinger_u": 1.69
+    }
+  ]
+}
