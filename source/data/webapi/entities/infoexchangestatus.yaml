@@ -1,0 +1,30 @@
+spec:
+  - name: hits
+    type: integer
+    desc: |
+      Number of records returned
+  - name: took_ms
+    type: integer
+    desc: |
+      Number of milliseconds in server processing time
+  - name: exchange
+    type: string
+    desc: |
+      An exchange symbol
+  - name: data
+    type: list
+    desc: |
+      A list of exchange status records
+example: |
+  {
+    "hits": 1,
+    "took_ms": 3,
+    "exchange": "nzx",
+    "data": [
+      {
+        "created": "2021-06-09T11:02:07.874383",
+        "opened": "2021-06-09T11:02:07.874383",
+        "status": "open"
+      }
+    ]
+  }
