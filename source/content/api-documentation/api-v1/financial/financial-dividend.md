@@ -3,7 +3,8 @@ title: Dividends
 weight: 50
 ---
 
-The Dividend endpoint returns stock dividend information. This information is updated daily.
+The Dividend endpoint returns stock dividend information. From June 2021 the data is enhanced and shows various new fields
+such as tax, currency code, exchange rate, period and comments. Prior to June 2021 only the 'dividend' field is present.
 
 {{< rest-endpoint resource="financial-dividend" method="GET" path="/financial/dividend" >}}
 

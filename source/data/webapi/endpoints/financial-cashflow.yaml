@@ -27,7 +27,7 @@ endpoints:
             required: false
             desc: exchange that the stock ticker if a member of
       returns: |
-        [Cashflow](#cashflow-entity) object
+        [Cashflow](#financialcashflow-entity) object
       errors:
         - status: 403
           reason: not authenticated

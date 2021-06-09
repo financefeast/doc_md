@@ -15,6 +15,18 @@ spec:
     type: list
     desc: |
       A list of exchange status records
+  - name: status
+    type: string
+    desc: |
+      The current status of the exchange, either 'open' or 'closed
+  - name: opened
+    type: string
+    desc: |
+      A date and time that the exchange opened for the trading day
+  - name: closed
+    type: string
+    desc: |
+      A date and time that the exchange closed for the trading day
 example: |
   {
     "hits": 1,

@@ -5,6 +5,13 @@ endpoints:
       summary: |
         Returns a list of statuses for supported exchanges
       params:
-        path:
+        query:
+          - name: exchange
+            type: string
+            required: false
+            desc: exchange to limit search to
       returns: |
-        [Exchange](#infoexchangestatus-entity) object
+        [ExchangeStatus](#infoexchangestatus-entity) object
+      errors:
+        - status: 404
+          reason: the exchange is not found
