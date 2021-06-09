@@ -27,7 +27,7 @@ endpoints:
             required: false
             desc: exchange that the stock ticker if a member of
       returns: |
-        [Income](#income-entity) object
+        [Income](#financialincome-entity) object
       errors:
         - status: 403
           reason: not authenticated

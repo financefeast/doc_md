@@ -34,7 +34,7 @@ spec:
   - name: data
     type: list
     desc: |
-      A list of dividend records
+      A list of tradable rights issue records
   - name: payment_date
     type: string
     desc: |
@@ -42,15 +42,11 @@ spec:
   - name: units
     type: integer
     desc: |
-      units used to calculate payment
+      base units in ratio calculation, eg units of 3 and a amount of 2 means for every 3 shares, 2 more new are allocated
   - name: amount
     type: float
     desc: |
-      payment amount per unit
-  - name: supplementary_amount
-    type: float
-    desc: |
-      additional payment amount per unit
+      new units in ratio calculation
   - name: currency_code
     type: string
     desc: |
@@ -67,34 +63,27 @@ spec:
     type: string
     desc: |
       describes the type of transaction this record relates to
-  - name: dividend_period
-    type: string
-    desc: |
-      final or interium
 example: |
   {
-    "ticker": "pct.nz",
-    "company_name": "Precinct Propertie Units",
+    "ticker": "nzl.nz",
+    "company_name": "New Zealand Rural Land Company Limited (NS)",
     "exchange": "",
-    "uuid4": "169d9da6-3fe7-43bd-9f42-e568af29a13f",
-    "date_from": "2010-01-01 00:00:00",
+    "uuid4": "b628f86b-28b2-4ffc-a344-0306d1a9f2c1",
+    "date_from": "2021-01-01 00:00:00",
     "date_to": "2021-12-31 00:00:00",
     "hits": 1,
-    "took_ms": 29,
+    "took_ms": 3,
     "data": [
       {
-        "payment_date": "2021-06-11",
-        "amount": "0.01625",
-        "withholding_tax": "0.0",
-        "supplementary_amount": "0.0",
-        "dividend_period": "Interim Dividend",
+        "payment_date": "2021-06-04",
         "comment": "",
-        "units": "000000001",
-        "currency_code": "NZD",
+        "units": "000000003",
+        "amount": "2.0",
+        "currency_code": "",
         "exchange_rate": "0.0",
-        "option_type": "Cash component only",
+        "option_type": "Security component only",
         "payment": "Shareholder Receive Payment",
-        "created": "2021-06-09T18:15:14.739725"
+        "timestamp": "2021-06-09T18:15:16.094118"
       }
     ]
   }

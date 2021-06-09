@@ -27,7 +27,7 @@ endpoints:
             required: false
             desc: exchange that the stock ticker if a member of
       returns: |
-        [Dividend](#dividend-entity) object
+        [Dividend](#financialdividend-entity) object
       errors:
         - status: 403
           reason: not authenticated

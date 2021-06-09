@@ -1,0 +1,50 @@
+spec:
+  - name: ticker
+    type: string
+    desc: |
+      A stock ticker
+  - name: company_name
+    type: string
+    desc: |
+      Company name for stock
+  - name: exchange
+    type: string
+    desc: |
+      Exchange stock ticker is member of
+  - name: uuid4
+    type: string
+    desc: |
+      Stock uuid4 unique string
+  - name: date_from
+    type: string
+    desc: |
+      Date range start
+  - name: date_to
+    type: string
+    desc: |
+      Date range end
+  - name: hits
+    type: integer
+    desc: |
+      Number of records returned
+  - name: took_ms
+    type: integer
+    desc: |
+      Number of milliseconds in server processing time
+  - name: data
+    type: list
+    desc: |
+      A list of interest records
+example: |
+  {
+    "ticker": "pct.nz",
+    "company_name": "Precinct Propertie Units",
+    "exchange": "",
+    "uuid4": "169d9da6-3fe7-43bd-9f42-e568af29a13f",
+    "date_from": "2010-01-01 00:00:00",
+    "date_to": "2021-12-31 00:00:00",
+    "hits": 1,
+    "took_ms": 29,
+    "data": [
+    ]
+  }

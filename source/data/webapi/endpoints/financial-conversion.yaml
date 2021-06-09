@@ -1,9 +1,9 @@
 endpoints:
-  /financial/balance:
+  /financial/conversion:
     GET:
-      title: Get Balance Sheet financial records
+      title: Get Conversion records
       summary: |
-        Returns balance sheet records from the companies annual report
+        Returns conversion records
       params:
         query:
           - name: ticker
@@ -27,7 +27,7 @@ endpoints:
             required: false
             desc: exchange that the stock ticker if a member of
       returns: |
-        [Balance](#financialbalance-entity) object
+        [Conversion](#financialconversion-entity) object
       errors:
         - status: 403
           reason: not authenticated

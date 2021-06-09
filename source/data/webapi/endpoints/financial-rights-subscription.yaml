@@ -1,9 +1,9 @@
 endpoints:
-  /financial/balance:
+  /financial/rights-subscription:
     GET:
-      title: Get Balance Sheet financial records
+      title: Get Rights Subscription records
       summary: |
-        Returns balance sheet records from the companies annual report
+        Returns rights subscription records
       params:
         query:
           - name: ticker
@@ -27,7 +27,7 @@ endpoints:
             required: false
             desc: exchange that the stock ticker if a member of
       returns: |
-        [Balance](#financialbalance-entity) object
+        [RightsSub](#financialrightssubscription-entity) object
       errors:
         - status: 403
           reason: not authenticated

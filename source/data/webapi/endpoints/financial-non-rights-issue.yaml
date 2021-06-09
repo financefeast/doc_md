@@ -1,9 +1,9 @@
 endpoints:
-  /financial/balance:
+  /financial/non-renounceable-rights-issue:
     GET:
-      title: Get Balance Sheet financial records
+      title: Get Non Renounceable Rights Issuerecords
       summary: |
-        Returns balance sheet records from the companies annual report
+        Returns non-renounceable rights issue records
       params:
         query:
           - name: ticker
@@ -27,7 +27,7 @@ endpoints:
             required: false
             desc: exchange that the stock ticker if a member of
       returns: |
-        [Balance](#financialbalance-entity) object
+        [NonRenounceable](#financialnonrenounceablerightsissue-entity) object
       errors:
         - status: 403
           reason: not authenticated
