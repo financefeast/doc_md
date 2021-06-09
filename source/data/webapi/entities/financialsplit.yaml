@@ -23,10 +23,6 @@ spec:
     type: string
     desc: |
       Date range end
-  - name: interval
-    type: string
-    desc: |
-      Time interval for data points.
   - name: hits
     type: integer
     desc: |
