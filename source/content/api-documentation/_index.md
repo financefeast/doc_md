@@ -5,9 +5,9 @@ weight: 5
 
 # API Documentation
 
-In order to start using Financefeast Web API, you will need to obtain your API key. An API key consists of two strings, 
-one called Key ID which always appears in your dashboard, and Secret Key, which appears only once when generating 
-it. Make sure you keep both in your hands.
+In order to start using Financefeast Web API, you will need to obtain your API `client id` and `client secret`. These can
+be obtained from your API dashboard [here](https://customer.financefeast.io). From the dashboard you can re-roll your client
+secret at any time if you need.
 
 ### [Web API v1]({{< relref "/api-documentation/api-v1/_index.md" >}})
  

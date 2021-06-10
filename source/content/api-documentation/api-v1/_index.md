@@ -4,19 +4,21 @@ weight: 10
 ---
 # API v1
 Financefeast is a modern platform to obtain stock market data using a simple HTTP based API. Financefeast's
-API allows easy retrieval of 20 minute delayed and real-time price and fundamentals from multiple exchanges.
+API allows easy retrieval of 20 minute delayed and real-time price and other financial information, such as company
+financial records like cashflow and balance sheet data. Alternate data is also available for social media posts and
+company announcements.
 
 In order to start data retrieval with financefeast API, please sign up
 [here](https://identity.financefeast.io/account/signup).
 
 Once you have signed up and have familiarized yourself with our API, please
 check out our [python client](https://github.com/financefeast/python_client)
-to begin writing your own data visualization and processing application!
+to begin integration with your own project.
 
 ## Authorization and Authentication
 
 Financefeast API uses the oauth2 authorization protocol and requires an initial authorization step to receive an authorization code. 
-The authorization code is then presented to all protected endpoints, such as <code>Core Data</code> endpoints and is then authorized. 
+The authorization code is then presented to all protected endpoints and is then authorized. 
 If the authorization code is valid access is granted, otherwise a 401 Unauthorized error is returned.
 
 Oauth2 authorization protocol allows flexibility to developers writing applications that consume the Financefeast API. 
@@ -25,7 +27,7 @@ Get in touch or read our guides on how you can develop your own Web application 
 
 ### To Authenticate and Get an Authorization Code
 
-First make a note of your client id and client secret. These can be found [here](https://customer.financefeast.io). 
+First make a note of your `client id` and `client secret`. These can be found [here](https://customer.financefeast.io). 
 
 [Authentication]({{< relref "./authentication.md" >}})
 
@@ -66,7 +68,7 @@ Decimal numbers are returned as floats or integers depending on the parameter. W
 to Financefeast API you can use strings or the primitive type.
 
 ### IDs
-Object ID in financefeast system uses UUID v4.  When making requests, the format
+Object IDs in financefeast system uses UUID v4.  When making requests, the format
 with dashes is accepted.
 
 ```

@@ -22,7 +22,7 @@
 
 {{ if $node.params }}
 <h3>Parameters</h3>
-{{ range (slice "path" "query" "body") }}
+{{ range (slice "path" "query" "body" "header") }}
     {{ if index $node.params . }}
     <h4>{{ humanize . }} Parameters</h4>
     <div class="spec-table">

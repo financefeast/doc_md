@@ -21,3 +21,6 @@ You can find more information on how to form the header [here]({{< relref "/api-
 ### Example
 {{< rest-entity-example name="authorization">}}
 
+### Code Example
+
+[Authorization]({{< relref "/api-documentation/how-to/authorization.md" >}})

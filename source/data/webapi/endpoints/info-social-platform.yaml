@@ -4,7 +4,5 @@ endpoints:
       title: Get a list of social media platforms
       summary: |
         Returns a list of supported social media platforms
-      params:
-        path:
       returns: |
         [SocialPlatform](#infosocialplatform-entity) object

@@ -11,7 +11,7 @@ allows you to call our API using their subscription.
 
 # We're Here to Help
 
-Building an OAuth enabled web application can be tricky, but we have put together a [guide]({{< relref "/integrating-with-financefeast/oauth/oauth_guide/oauth_guide.md" >}}) to get you started.
+Building an OAuth enabled web application can be tricky, but we have put together a [guide]({{< relref "./oauth/oauth_guide/oauth_guide.md" >}}) to get you started.
 Need help? Can't find what you're looking for here? Post a message on [community slack](https://financefeast.slack.com) and one of the Financefeast
 team or the community will help you.
 

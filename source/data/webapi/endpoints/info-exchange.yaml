@@ -4,7 +4,5 @@ endpoints:
       title: Get a list of exchanges
       summary: |
         Returns a list of supported exchanges
-      params:
-        path:
       returns: |
         [Exchange](#infoexchange-entity) object

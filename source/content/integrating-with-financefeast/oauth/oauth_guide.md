@@ -8,7 +8,7 @@ description: Financefeast supports OAuth for integration to our API
 
 We welcome developers to build applications and products that are powered by Financefeast while also protecting the privacy and security of our users. To build using Financefeast's APIs, please follow the guide below.
 
-Financefeast uses [`OAuth2`] as the framework to authorize Financefeast customers to our API.
+Financefeast uses `OAuth2` as the framework to authorize Financefeast customers to our API.
 
 * [Terms of Access and Use]({{< relref "#terms-of-access-and-use" >}})
 * [Registering Your Application]({{< relref "#application-creation-and-registration" >}})
