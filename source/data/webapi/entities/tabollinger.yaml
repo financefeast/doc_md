@@ -48,46 +48,46 @@ spec:
     desc: |
       The bollinger band upper
 example: |
-{
-  "ticker": "air.nz",
-  "company_name": "Air New Zealand",
-  "exchange": "",
-  "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
-  "date_from": "2021-06-01 00:00:00",
-  "date_to": "2021-06-10 09:04:32.772280",
-  "interval": "1:00:00",
-  "hits": 27,
-  "took_ms": 10,
-  "data": [
-    {
-      "timestamp": "2021-06-09T11:00:00+12:00",
-      "close": 1.67,
-      "open": 1.66,
-      "high": 1.67,
-      "low": 1.65,
-      "volume": 21994,
-      "bollinger_l": 1.66,
-      "bollinger_u": 1.69
-    },
-    {
-      "timestamp": "2021-06-09T12:00:00+12:00",
-      "close": 1.66,
-      "open": 1.66,
-      "high": 1.67,
-      "low": 1.65,
-      "volume": 46092,
-      "bollinger_l": 1.65,
-      "bollinger_u": 1.69
-    },
-    {
-      "timestamp": "2021-06-09T12:05:27+12:00",
-      "close": 1.66,
-      "open": 1.66,
-      "high": 1.66,
-      "low": 1.66,
-      "volume": 0,
-      "bollinger_l": 1.65,
-      "bollinger_u": 1.69
-    }
-  ]
-}
+  {
+    "ticker": "air.nz",
+    "company_name": "Air New Zealand",
+    "exchange": "",
+    "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
+    "date_from": "2021-06-01 00:00:00",
+    "date_to": "2021-06-10 09:04:32.772280",
+    "interval": "1:00:00",
+    "hits": 27,
+    "took_ms": 10,
+    "data": [
+      {
+        "timestamp": "2021-06-09T11:00:00+12:00",
+        "close": 1.67,
+        "open": 1.66,
+        "high": 1.67,
+        "low": 1.65,
+        "volume": 21994,
+        "bollinger_l": 1.66,
+        "bollinger_u": 1.69
+      },
+      {
+        "timestamp": "2021-06-09T12:00:00+12:00",
+        "close": 1.66,
+        "open": 1.66,
+        "high": 1.67,
+        "low": 1.65,
+        "volume": 46092,
+        "bollinger_l": 1.65,
+        "bollinger_u": 1.69
+      },
+      {
+        "timestamp": "2021-06-09T12:05:27+12:00",
+        "close": 1.66,
+        "open": 1.66,
+        "high": 1.66,
+        "low": 1.66,
+        "volume": 0,
+        "bollinger_l": 1.65,
+        "bollinger_u": 1.69
+      }
+    ]
+  }

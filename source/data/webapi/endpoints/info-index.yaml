@@ -1,0 +1,17 @@
+endpoints:
+  /info/index:
+    GET:
+      title: Get a list of indices
+      summary: |
+        Returns a list of supported indices
+      params:
+        query:
+          - name: exchange
+            type: string
+            required: false
+            desc: exchange to return index for
+      returns: |
+        [Index](#infoindex-entity) object
+      errors:
+        - status: 404
+          reason: the exchange is not found
