@@ -21,7 +21,7 @@
 @media only screen and (max-width: 959px) {
     .palette-primary-orange .project  {
         background: #030303;
-        color: #FCD503;
+        color: #d0d0d0;
     }
 }
 .article {
@@ -217,8 +217,8 @@ pre.entity li {
     text-transform: none;
     text-align: center;
     vertical-align: middle;
-    background: #FFD700;
-    color: #030303;
+    background: #ec7b1c;
+    color: #ffffff;
     padding: 10px 35px;
     min-width: 181px;
     font-family: 'Carnas';
@@ -236,7 +236,7 @@ pre.entity li {
 }
 .cta-button-key:hover {
     /* background: #333; */
-    background: #ffdf33
+    background: #fa9e57
 }
 
 nav div.bar {
@@ -283,7 +283,7 @@ span.financefeast-docs-subtitle a:hover {
 }
 
 .banner-mobile {
-    background: #FCD503;
+    background: #ec7b1c;
     height: 60px;
     padding: 10px;
 }
