@@ -1,0 +1,88 @@
+spec:
+  - name: index_id
+    type: string
+    desc: |
+      A index symbol
+  - name: s_p_capital_index_code
+    type: string
+    desc: |
+      Standard & Poors index code
+  - name: exchange
+    type: string
+    desc: |
+      Exchange stock ticker is member of
+  - name: uuid4
+    type: string
+    desc: |
+      Stock uuid4 unique string
+  - name: date_from
+    type: string
+    desc: |
+      Date range start
+  - name: date_to
+    type: string
+    desc: |
+      Date range end
+  - name: interval
+    type: string
+    desc: |
+      Time interval for data points.
+  - name: hits
+    type: integer
+    desc: |
+      Number of records returned
+  - name: took_ms
+    type: integer
+    desc: |
+      Number of milliseconds in server processing time
+  - name: data
+    type: list
+    desc: |
+      A list of index price records in OHLC format
+example: |
+  {
+    "index_id": "g10",
+    "s_p_capital_index_code": "SPNZXALL10",
+    "exchange": "",
+    "uuid4": "baf9e313-83c7-4f09-b43b-0d3480ace804",
+    "date_from": "2021-06-01 00:00:00",
+    "date_to": "2021-06-10 14:21:10.937413",
+    "interval": "1 day, 0:00:00",
+    "hits": 3,
+    "took_ms": 47,
+    "data": [
+      {
+        "gross_first": 542.99,
+        "gross_high": 550.54,
+        "gross_low": 542.9,
+        "gross_value": 544.72,
+        "capital_first": 415.02,
+        "capital_high": 420.79,
+        "capital_low": 414.95,
+        "capital_value": 416.34,
+        "timestamp": "2021-06-03T00:00:00"
+      },
+      {
+        "gross_first": 544.72,
+        "gross_high": 560.65,
+        "gross_low": 542.9,
+        "gross_value": 558.09,
+        "capital_first": 416.34,
+        "capital_high": 428.52,
+        "capital_low": 414.95,
+        "capital_value": 426.56,
+        "timestamp": "2021-06-04T00:00:00"
+      },
+      {
+        "gross_first": 542.99,
+        "gross_high": 560.65,
+        "gross_low": 542.9,
+        "gross_value": 558.09,
+        "capital_first": 415.02,
+        "capital_high": 428.52,
+        "capital_low": 414.95,
+        "capital_value": 426.56,
+        "timestamp": "2021-06-05T00:00:00"
+      }
+    ]
+  }

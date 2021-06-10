@@ -1,0 +1,35 @@
+endpoints:
+  /data/index:
+    GET:
+      title: Get Index intraday index price data
+      summary: |
+        Returns index price data for gross and capital values for first, high, low and close price points
+      params:
+        query:
+          - name: index
+            type: string
+            required: true
+            desc: index symbol or uuid4
+          - name: datetime_from
+            type: string
+            required: false
+            desc: a date string in YYY-MM-DD 00:00:00 format as start of date range
+          - name: datetime_to
+            type: string
+            required: false
+            desc: a date string in YYY-MM-DD 00:00:00 format as endof date range
+          - name: exchange
+            type: string
+            required: false
+            desc: exchange that the index ticker if a member of
+          - name: interval
+            type: interger
+            required: false
+            desc: time interval for data points
+      returns: |
+        [Index](#coredataindexintraday-entity) object
+      errors:
+        - status: 403
+          reason: not authenticated
+        - status: 404
+          reason: the index is not found

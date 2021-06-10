@@ -1,0 +1,22 @@
+endpoints:
+  /info/index/{string}:
+    GET:
+      title: Get a list of indices based on a search string
+      summary: |
+        Returns a list of indices
+      params:
+        path:
+          - name: string
+            type: string
+            required: true
+            desc: index_id or index name or uuid4 to search for
+        query:
+          - name: exchange
+            type: string
+            required: false
+            desc: exchange to return index for
+      returns: |
+        [Index](#infoindexsearch-entity) object
+      errors:
+        - status: 404
+          reason: the exchange is not found, or the search string is not found

@@ -1,0 +1,75 @@
+spec:
+  - name: hits
+    type: integer
+    desc: |
+      Number of records returned
+  - name: took_ms
+    type: integer
+    desc: |
+      Number of milliseconds in server processing time
+  - name: exchange
+    type: string
+    desc: |
+      The exchange query parameter searched for
+  - name: data
+    type: list
+    desc: |
+      A list of indices
+  - name: index_id
+    type: string
+    desc: |
+      The index symbol
+  - name: s_p_capital_index_code
+    type: string
+    desc: |
+      S&P Dow Jones Indices capital index code
+  - name: s_p_gross_index_code
+    type: string
+    desc: |
+      S&P Dow Jones Indices gross index code
+  - name: exchange
+    type: string
+    desc: |
+      Exchange stock ticker is member of
+  - name: uuid4
+    type: string
+    desc: |
+      Uuid4 unique string
+  - name: active
+    type: string
+    desc: |
+      Will be true if the ticker is listed on the exchange
+  - name: meta_data
+    type: list
+    desc: |
+      A list of additonal meta data
+example: |
+  {
+    "hits": 2,
+    "took_ms": 5,
+    "exchange": "all",
+    "data": [
+      {
+        "index_id": "ALL",
+        "s_p_capital_index_code": "SPNZXALL",
+        "capital_index_description": "S&P/NZX All Index",
+        "s_p_gross_index_code": "SPNZXALLTR",
+        "gross_index_description": "S&P/NZX All Index Gross",
+        "exchange": "nzx",
+        "uuid4": "411bb897-488e-4e5c-a6c3-2628ebdf9123",
+        "active": true,
+        "meta_data": {}
+      },
+      {
+        "index_id": "FWPI",
+        "s_p_capital_index_code": "SPNZXFWPI",
+        "capital_index_description": "S&P/NZX Primary Sector Investable Equity Index",
+        "s_p_gross_index_code": "SPNZXFWPITR",
+        "gross_index_description": "S&P/NZX Primary Sector Investable Equity Index Gross",
+        "exchange": "nzx",
+        "uuid4": "0d589bcf-eee8-4307-8564-d17939026d09",
+        "active": true,
+        "meta_data": {}
+      }
+    ]
+  }
