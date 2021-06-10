@@ -7,7 +7,7 @@ The Social Platform endpoint returns a list of available supported social media 
 [Social Media Sentiment]({{< relref "/api-documentation/api-v1/alternate/alternate-social-sentiment.md" >}}) endpoint to return
 social media posts along with sentiment.
 
-{{< rest-endpoint resource="info-social-platform" method="GET" path="/info/social_platform" >}}
+{{< rest-endpoint resource="info-social-platform" method="GET" path="/info/social-platform" >}}
 
 ## Social Platform Entity
 
