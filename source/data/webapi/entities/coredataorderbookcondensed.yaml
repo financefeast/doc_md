@@ -1,0 +1,70 @@
+spec:
+  - name: ticker
+    type: string
+    desc: |
+      A stock ticker
+  - name: company_name
+    type: string
+    desc: |
+      Company name for stock
+  - name: exchange
+    type: string
+    desc: |
+      Exchange stock ticker is member of
+  - name: uuid4
+    type: string
+    desc: |
+      Stock uuid4 unique string
+  - name: hits
+    type: integer
+    desc: |
+      Number of records returned
+  - name: took_ms
+    type: integer
+    desc: |
+      Number of milliseconds in server processing time
+  - name: data
+    type: list
+    desc: |
+      A list containing buy and sell orders
+  - name: buy
+    type: list
+    desc: |
+      A list of buy orders showing price and quantity
+  - name: sell
+    type: list
+    desc: |
+      A list of sell orders showing price and quantity
+example: |
+  {
+    "ticker": "air.nz",
+    "company_name": "Air New Zealand",
+    "exchange": "",
+    "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
+    "hits": 1,
+    "took_ms": 42,
+    "data": [
+      {
+        "buy": {
+          "1.63": 224861,
+          "1.625": 46397,
+          "1.62": 157995,
+          "1.615": 5000,
+          "1.61": 42019,
+          "1.6": 31184,
+          "1.59": 6040,
+          "1.5": 100
+        },
+        "sell": {
+          "1.645": 7500,
+          "1.65": 35,
+          "1.655": 22037,
+          "1.665": 15350,
+          "1.7": 23755,
+          "1.765": 15350,
+          "1.8": 36
+        },
+        "timestamp": "2021-06-11T17:36:59.402322"
+      }
+    ]
+  }

@@ -1,0 +1,28 @@
+endpoints:
+  /data/orderbook:
+    GET:
+      title: Get Orderbook for stock
+      summary: |
+        Returns the market depth level 2 orderbook for a symbol.
+      params:
+        query:
+          - name: ticker
+            type: string
+            required: true
+            desc: stock ticker or uuid4
+          - name: condensed
+            type: string
+            required: false
+            desc: true for condensed orderbook or false for full. defaults to true to return a condensed response
+          - name: exchange
+            type: string
+            required: false
+            desc: exchange that the stock ticker if a member of
+      returns: |
+        [Orderbook](#coredataorderbookcondensed-entity) object
+        [Orderbook](#coredataorderbookfull-entity) object
+      errors:
+        - status: 403
+          reason: not authenticated
+        - status: 404
+          reason: the ticker is not found
