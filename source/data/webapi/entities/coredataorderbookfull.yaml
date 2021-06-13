@@ -1,0 +1,105 @@
+spec:
+  - name: ticker
+    type: string
+    desc: |
+      A stock ticker
+  - name: company_name
+    type: string
+    desc: |
+      Company name for stock
+  - name: exchange
+    type: string
+    desc: |
+      Exchange stock ticker is member of
+  - name: uuid4
+    type: string
+    desc: |
+      Stock uuid4 unique string
+  - name: hits
+    type: integer
+    desc: |
+      Number of records returned
+  - name: took_ms
+    type: integer
+    desc: |
+      Number of milliseconds in server processing time
+  - name: data
+    type: list
+    desc: |
+      A list containing buy and sell orders
+  - name: buy
+    type: list
+    desc: |
+      A list of buy orders showing price and quantity
+  - name: sell
+    type: list
+    desc: |
+      A list of sell orders showing price and quantity
+example: |
+  {
+    "ticker": "air.nz",
+    "company_name": "Air New Zealand",
+    "exchange": "",
+    "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
+    "hits": 1,
+    "took_ms": 12,
+    "data": [
+      {
+        "buy": [
+          {
+            "security_code": "AIR",
+            "order_identifier": "20210611-000000039170",
+            "order_priority": "002345",
+            "buy_sell": "B",
+            "firm_id": "",
+            "price": 1.6,
+            "yield": 0,
+            "quantity": "00000000003524",
+            "hidden": "N",
+            "type": "Limit",
+            "order_status": "Open"
+          },
+          {
+            "security_code": "AIR",
+            "order_identifier": "20210611-000000039810",
+            "order_priority": "002352",
+            "buy_sell": "B",
+            "firm_id": "",
+            "price": 1.59,
+            "yield": 0,
+            "quantity": "00000000000040",
+            "hidden": "N",
+            "type": "Limit",
+            "order_status": "Open"
+          },
+          {
+            "security_code": "AIR",
+            "order_identifier": "20210611-000000080679",
+            "order_priority": "002882",
+            "buy_sell": "S",
+            "firm_id": "",
+            "price": 1.65,
+            "yield": 0,
+            "quantity": "00000000000035",
+            "hidden": "N",
+            "type": "Limit",
+            "order_status": "Open"
+          },
+          {
+            "security_code": "AIR",
+            "order_identifier": "20210611-000000081782",
+            "order_priority": "002892",
+            "buy_sell": "S",
+            "firm_id": "",
+            "price": 1.7,
+            "yield": 0,
+            "quantity": "00000000001000",
+            "hidden": "N",
+            "type": "Limit",
+            "order_status": "Open"
+          }
+        ],
+        "timestamp": "2021-06-11T17:36:59.402322"
+      }
+    ]
+  }
