@@ -1,6 +1,6 @@
 ---
 title: Authentication
-weight: 20
+weight: 12
 ---
 
 Before calling protected endpoints you will need to authenticate using your client id and client secret to obtain

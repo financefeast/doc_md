@@ -8,8 +8,7 @@ weight: 10
 ## Who We Are
 
 Financefeast is a technology company headquartered in Wellington, New Zealand. We provide free stock market data for New Zealand's 
-NZX stock exchange. We have a direct connection to the exchange so our data is real-time, as it happens, so you get your data
-as it happens.
+NZX stock exchange. We have a direct connection to the exchange so our data is real-time, as it happens, so you get your data fast.
 
 ## Our Mission
 

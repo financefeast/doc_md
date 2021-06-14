@@ -1,6 +1,6 @@
 ---
 title: Authorization
-weight: 25
+weight: 14
 ---
 
 To authorize to protected endpoints you must pass an 'Bearer Authorization' http header containing a token that was recently 
