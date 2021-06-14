@@ -13,7 +13,8 @@ If you need help in getting started, [check out our examples and tutorials](/get
 
 ## Sign Up and Start Tracking Stocks!
 
-With a free Financefeast account you can start interacting with stock market data.
+With a free Financefeast account you can start interacting with stock market data instantly. Signup only asks for
+your email address and a password. We won't ask a thousand questions before you can get your data.
 
 [Sign up for a Financefeast account here](https://identity.financefeast.io/account/signup)
 

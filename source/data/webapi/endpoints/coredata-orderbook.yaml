@@ -19,8 +19,8 @@ endpoints:
             required: false
             desc: exchange that the stock ticker if a member of
       returns: |
-        [Orderbook](#coredataorderbookcondensed-entity) object
-        [Orderbook](#coredataorderbookfull-entity) object
+        [Orderbook-Condensed](#coredataorderbookcondensed-entity) object
+        [Orderbook-Full](#coredataorderbookfull-entity) object
       errors:
         - status: 403
           reason: not authenticated

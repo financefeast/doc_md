@@ -1,5 +1,5 @@
 ---
 title: Technical Indicators
-weight: 10
+weight: 15
 ---
 # Technical Indicators

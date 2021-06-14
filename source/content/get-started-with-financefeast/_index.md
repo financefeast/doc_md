@@ -5,7 +5,7 @@ weight: 40
 
 # Get Started With Financefeast
 
-The following is a list of working examples built by Financefeast. You can copy them as-is and should immediately get data to visualize.
+The following is a list of working examples built by Financefeast to help you get started quickly. 
 
 [//]: # (**[Testing the API with Postman]({{< relref "/get-started-with-financefeast/testing-with-postman.md" >}})**)
 [//]: # (**[First look at the Financefeast python client library]({{< relref "/get-started-with-financefeast/using-python-client-library.md" >}})**)

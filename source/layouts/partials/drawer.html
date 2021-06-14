@@ -1,7 +1,8 @@
 <nav aria-label="Navigation">
   <a href="{{ with .Site.Params.repo_url }}{{ . }}{{ else }}{{ .Site.BaseURL }}{{ end }}" class="project show-sm-only">
     <div class="banner-mobile show-sm-only">
-      <a href="https://financefeast.io" target="_blank"><img src="{{ "images/ff_logo_sm.png" | absURL }}" class="financefeast-docs-subtitle-image" alt="Financefeast Documentation" /></a> <span class="financefeast-docs-subtitle"><a href="/">Docs</a></span>
+      <!--<a href="https://financefeast.io" target="_blank"><img src="{{ "images/ff_logo_sm.png" | absURL }}" class="financefeast-docs-subtitle-image" alt="Financefeast Documentation" /></a> <span class="financefeast-docs-subtitle"><a href="/">Docs</a></span>-->
+      <span class="financefeast-docs-subtitle"><a href="https://financefeast.io">Financefeast Docs</a></span>
     </div>
   </a>
 
@@ -28,7 +29,7 @@
         {{ if gt (len .Site.Menus.main) 0 }}
         <ul>
           {{ partial "nav" . }}
-          <li><a href="https://github.com/financefeast/" target="_blank" class="current">financefeast Github💡</a></li>
+          <!--<li><a href="https://github.com/financefeast/" target="_blank" class="current">Financefeast Github&nbsp;<span class="fa fa-external-link-alt"></span></a></li>-->
           <!--<li><a href="https://forum.financefeast.io/" target="_blank" class="current">financefeast Forum🙌</a></li>-->
         </ul>
         {{ end }}
@@ -74,10 +75,10 @@
           --->
         <ul>
           <li>          
-            <a href="https://github.com/financefeast">API GitHub Repo</a>
+            <a href="https://github.com/financefeast">API GitHub Repo&nbsp;<span class="fa fa-external-link-alt"></span></a>
           </li>
           <li>
-            <a href="https://github.com/financefeast/doc_md">Contribute to Docs</a>
+            <a href="https://github.com/financefeast/doc_md">Contribute to Docs&nbsp;<span class="fa fa-external-link-alt"></span></a>
           </li>
         <!---
           <li style="display: flex; align-items: center; padding-left: 20px">
