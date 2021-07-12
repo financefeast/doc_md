@@ -31,7 +31,7 @@ pip install financefeast
 * Open your favorite IDE or text editor and create a new project or file
 * Import the following:
 ```python
-from financefeast import FinanceFeast
+from financefeast import Rest, Environments
 import pandas as pd
 import matplotlib.pyplot as plt
 ```
@@ -43,7 +43,7 @@ This imports the Financefeast client library, pandas for data manipulation and m
 
 Now authenticate to the API
 ```python
-client = FinanceFeast(client_id="YOUR_CLIENT_ID", client_secret="YOUR_CLIENT_SECRET")
+client = Rest(client_id="YOUR_CLIENT_ID", client_secret="YOUR_CLIENT_SECRET")
 ```
 This should print a message like this:
 ```python
@@ -54,22 +54,23 @@ INFO:ff_client:Client successfully authorized to API
 ### Pull End of Day Data
 We will get EOD data for 'air.nz' for the year to date:
 ```python
-data = client.eod(ticker='air.nz', date_from="2021-01-01")
+result = client.eod(ticker='air.nz', date_from="2021-01-01")
 ```
 If you print the 'data' variable you should see something like this (I've abbreviated it for display):
 ```python
-[{'timestamp': 1609804800.0, 'close': 1.79, 'open': 1.8, 'high': 1.8, 'low': 1.785, 'volume': 291549.0},..., ....]
+[{'timestamp': '2021-01-07T00:00:00', 'close': 1.79, 'open': 1.8, 'high': 1.8, 'low': 1.785, 'volume': 291549.0},..., ....]
 ```
 Now we'll put the data into a Pandas DataFrame so that we can manipulate the data and plot it:
 ```python
-df = pd.DataFrame(data)
+df = pd.DataFrame(result.data)
 ```
+Note that we call the the `data` property of the `result` object to access the price data.
 
 ### Graph the Data
 Now that we have the price data in a Pandas DataFrame we will visualize it. First we need to set the index on the DataFrame
 as type datetime:
 ```python
-df['date'] = pd.to_datetime(df['timestamp'],unit='s')
+df['date'] = pd.to_datetime(df['timestamp'])
 df.set_index('date', inplace=True)
 ```
 Now we can get Pandas to plot the graph using the 'close' column as the data source
@@ -85,14 +86,14 @@ You should now be looking at a graph like this
 ### Final Code
 Your final code should look like this:
 ```python
-from financefeast import FinanceFeast
+from financefeast import Rest, Environments
 import pandas as pd
 import matplotlib.pyplot as plt
 
-client = FinanceFeast(client_id="YOUR_CLIENT_ID", client_secret="YOUR_CLIENT_SECRET")
-data = client.eod(ticker='air.nz', date_from="2021-01-01")
-df = pd.DataFrame(data)
-df['date'] = pd.to_datetime(df['timestamp'],unit='s')
+client = Rest(client_id="YOUR_CLIENT_ID", client_secret="YOUR_CLIENT_SECRET")
+result = client.eod(ticker='air.nz', date_from="2021-01-01")
+df = pd.DataFrame(result.data)
+df['date'] = pd.to_datetime(df['timestamp'])
 df.set_index('date', inplace=True)
 gph = df['close'].plot()
 plt.show()
