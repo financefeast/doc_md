@@ -1,6 +1,6 @@
-from financefeast import FinanceFeast, Environments
+from financefeast import Rest
 
-client = FinanceFeast(client_id="your-client-id", client_secret="your-client-secret")
+client = Rest(client_id="your-client-id", client_secret="your-client-secret")
 print(client.validate())
 
 """

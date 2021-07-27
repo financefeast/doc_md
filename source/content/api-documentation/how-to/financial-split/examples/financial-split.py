@@ -1,4 +1,4 @@
-from financefeast import FinanceFeast, Environments
+from financefeast import Rest
 
-client = FinanceFeast(client_id="your-client-id", client_secret="your-client-secret")
-print(client.split(ticker='air.nz', year=2020))
+client = Rest(client_id="your-client-id", client_secret="your-client-secret")
+print(client.split(ticker='air.nz', year=2020).data)
