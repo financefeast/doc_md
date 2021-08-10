@@ -1,0 +1,61 @@
+spec:
+  - name: date_from
+    type: string
+    desc: |
+      Date range start
+  - name: date_to
+    type: string
+    desc: |
+      Date range end
+  - name: hits
+    type: integer
+    desc: |
+      Number of records returned
+  - name: took_ms
+    type: integer
+    desc: |
+      Number of milliseconds in server processing time
+  - name: data
+    type: list
+    desc: |
+      A list of cpi price percentage values
+  - name: pct_chg_yr
+    type: float
+    desc: |
+      Percentage change from previous year
+  - name: pct_chg_pp
+    type: float
+    desc: |
+      Percentage change from previous period
+example: |
+  {
+    "date_from": "1973-01-01 00:00:00",
+    "date_to": "2021-12-31 00:00:00",
+    "hits": 194,
+    "took_ms": 26,
+    "data": [
+      {
+        "pct_chg_yr": 6,
+        "pct_chg_pp": 2.4,
+        "year": "1973",
+        "quarter": "Q1"
+      },
+      {
+        "pct_chg_yr": 7.6,
+        "pct_chg_pp": 2.8,
+        "year": "1973",
+        "quarter": "Q2"
+      },
+      {
+        "pct_chg_yr": 8.9,
+        "pct_chg_pp": 2.3,
+        "year": "1973",
+        "quarter": "Q3"
+      },
+      {
+        "pct_chg_yr": 10.2,
+        "pct_chg_pp": 2.4,
+        "year": "1973",
+        "quarter": "Q4"
+      }
+  }

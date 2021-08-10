@@ -1,0 +1,25 @@
+endpoints:
+  /alternate/cpi:
+    GET:
+      title: Get consumer price index
+      summary: |
+        Returns consumer price index percentage change values by previous year or period. Data is interval is quarterly.
+      params:
+        query:
+          - name: date_from
+            type: string
+            required: false
+            desc: a date string in YYY-MM-DD format as start of date range
+          - name: date_to
+            type: string
+            required: false
+            desc: a date string in YYY-MM-DD format as endof date range
+          - name: year
+            type: string
+            required: false
+            desc: a year in YYYY format to search by a single year
+      returns: |
+        [CPI](#alternatecpi-entity) object
+      errors:
+        - status: 403
+          reason: not authenticated
