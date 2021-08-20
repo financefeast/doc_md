@@ -6,11 +6,11 @@ endpoints:
         Authenticate using your client credentials to obtain an authorization token
       params:
         header:
-          - name: FF-CLIENT-ID
+          - name: X-FF-ID
             type: string
             required: true
             desc: client id
-          - name: FF-CLIENT-SECRET
+          - name: X-FF-SECRET
             type: string
             required: true
             desc: client secret

@@ -1,1 +1,1 @@
-curl -H 'Accept: application/json' -H "FF-CLIENT-ID: {your client id}" -H "FF-CLIENT-SECRET: {your client secret}" https://api.financefeast.io/oauth/login
+curl -H 'Accept: application/json' -H "X-FF-ID: {your client id}" -H "X-FF-SECRET: {your client secret}" https://api.financefeast.io/oauth/login
