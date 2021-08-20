@@ -17,5 +17,7 @@ endpoints:
       returns: |
         [Authentication](#authentication-entity) object
       errors:
+        - status: 400
+          reason: missing authentication headers
         - status: 403
           reason: not authenticated
