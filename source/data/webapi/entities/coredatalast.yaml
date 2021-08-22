@@ -1,0 +1,48 @@
+spec:
+  - name: ticker
+    type: string
+    desc: |
+      A stock ticker
+  - name: company_name
+    type: string
+    desc: |
+      Company name for stock
+  - name: exchange
+    type: string
+    desc: |
+      Exchange stock ticker is member of
+  - name: uuid4
+    type: string
+    desc: |
+      Stock uuid4 unique string
+  - name: hits
+    type: integer
+    desc: |
+      Number of records returned
+  - name: took_ms
+    type: integer
+    desc: |
+      Number of milliseconds in server processing time
+  - name: data
+    type: list
+    desc: |
+      A list of price records in OHLC format
+example: |
+  {
+      "ticker": "air.nz",
+      "company_name": "Air New Zealand",
+      "exchange": "",
+      "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
+      "hits": 1,
+      "took_ms": 20,
+      "data": [
+          {
+              "timestamp": "2021-07-18T10:00:00",
+              "close": 1.54,
+              "open": 1.54,
+              "high": 1.54,
+              "low": 1.54,
+              "volume": 0
+          }
+      ]
+  }
