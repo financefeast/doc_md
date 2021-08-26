@@ -71,6 +71,28 @@ to Financefeast API you can use strings or the primitive type.
 Object IDs in financefeast system uses UUID v4.  When making requests, the format
 with dashes is accepted.
 
+### Data Intervals and Data Retention
+Financefeast API has 3 native time series intervals for its price data. These are:
+| Interval | Parameter | Retention Policy
+| -------- | ----------| ----------------
+| 1 minute | 1m        | 1 year
+| 1 hour   | 1h        | 3 years
+| 1 day    | 1d        | 20 years
+
+* When supplying an interval parameter to one of the API endpoints the data retention will be determined by the native intervals
+in the table above. Ie using interval=1h will mean you will only be able to request 3 years of historical data.
+* The retention policy is the minimum we will time series we will hold, but expect to retrain longer periods over time. 
+
+Interval parameters can be supplied as:
+| Interval | | | |
+| -------  |-|-|-|
+| weeks    | weeks | w | wks
+| days     | days  | d | dys
+| hours    | hours | h | hrs
+| minutes  | minutes | m | mins
+| seconds  | seconds | s | secs
+
+
 ```
 1d72e892-7336-4097-a762-7a9680111721
 ```
