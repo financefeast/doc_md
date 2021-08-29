@@ -1,0 +1,58 @@
+spec:
+  - name: ticker
+    type: string
+    desc: |
+      A stock ticker
+  - name: company_name
+    type: string
+    desc: |
+      Company name for stock
+  - name: exchange
+    type: string
+    desc: |
+      Exchange stock ticker is member of
+  - name: uuid4
+    type: string
+    desc: |
+      Stock uuid4 unique string
+  - name: date_from
+    type: string
+    desc: |
+      Date range start
+  - name: date_to
+    type: string
+    desc: |
+      Date range end
+  - name: hits
+    type: integer
+    desc: |
+      Number of records returned
+  - name: took_ms
+    type: integer
+    desc: |
+      Number of milliseconds in server processing time
+  - name: data
+    type: list
+    desc: |
+      A list of company announcements
+example: |
+  {
+    "ticker": "air.nz",
+    "company_name": "Air New Zealand",
+    "exchange": "",
+    "uuid4": "1d72e892-7336-4097-a762-7a9680111721",
+    "date_from": "2021-01-01 00:00:00",
+    "date_to": "2021-12-31 00:00:00",
+    "hits": 2,
+    "took_ms": 10,
+    "data": [
+      {
+        "timestamp": "2021-06-28T09:00:07.268138",
+        "text": "37458728/06/2021 09:00\rGENERAL\rNOT PRICE SENSITIVE\rREL: 0900 HRS Air New Zealand Limited (NS)\r\rGENERAL: AIR: Air New Zealand updates on Director retirements\r\rLong serving Air New Zealand Directors Rob Jager (ONZM) and Linda Jenkinson\rhave advised the Chairman they will retire from the Air New Zealand Board at\rthis year's Annual Shareholders Meeting (ASM) to be held in the last quarter\rof calendar 2021.\r\rChairman Dame Therese Walsh said Rob has served the airline for three terms\rand consequently will not seek re-election at this year's ASM.\r\r\"Rob has been an excellent Director and made a significant contribution to\rthe Board. His leadership as Chairman of the Board's Health, Safety and\rSecurity Committee will leave a lasting legacy for Air New Zealand\".\r\rLinda Jenkinson has been a Director for almost three terms and had previously\rindicated that 2021 could be her last year of service due to increasing\rprofessional commitments in New Zealand and overseas.\r\r\"Linda has been an important part of the Air New Zealand Board for many\ryears, bringing an invaluable global perspective and technology insight to\rthe table. In her future endeavours, Linda aims to share these perspectives\rmore widely across Aotearoa as well as focus on her latest global technology\rventure 'Level Up'.\"\r\rDame Therese thanked Rob and Linda for their commitment over many years but\respecially during the last 15 months as they worked collectively with fellow\rDirectors, the Executive and other company leaders as the airline responded\rto Covid-19.\rIn due course, Air New Zealand will advise replacement Directors for Rob\rJager, Linda Jenkinson and Jan Dawson who announced in July 2020 her plan to\rretire at this year's ASM.\r\rThis announcement is made pursuant to Listing Rule 3.20.1.\r\rEnds\rEnd CA:00374587 For:AIR, Type:GENERAL, Time:2021-06-28 09:00:06\r"
+      },
+      {
+        "timestamp": "2021-07-01T09:23:44.392909",
+        "text": "37489901/07/2021 09:23\rGENERAL\rNOT PRICE SENSITIVE\rREL: 0923 HRS Air New Zealand Limited (NS)\r\rGENERAL: AIR: Air New Zealand Investor Update (Op Stats) - May 2021\r\rPlease find attached the Air New Zealand Investor Update for May 2021.\r\rFor investor relations questions, please contact:\r\rKim Cootes\rSenior Manager Investor Relations\rkim.cootes@airnz.co.nz\r+64 27 297 0244\rEnd CA:00374899 For:AIR, Type:GENERAL, Time:2021-07-01 09:23:44\r"
+      }
+    ]
+  }
