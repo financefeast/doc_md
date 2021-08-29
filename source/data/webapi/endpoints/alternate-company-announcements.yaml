@@ -1,0 +1,35 @@
+endpoints:
+  /alternate/announcement:
+    GET:
+      title: Get company announcements
+      summary: |
+        Returns company announcements.
+      params:
+        query:
+          - name: ticker
+            type: string
+            required: true
+            desc: stock ticker or uuid4
+          - name: date_from
+            type: string
+            required: false
+            desc: a date string in YYY-MM-DD format as start of date range
+          - name: date_to
+            type: string
+            required: false
+            desc: a date string in YYY-MM-DD format as endof date range
+          - name: exchange
+            type: string
+            required: false
+            desc: exchange that the stock ticker if a member of
+          - name: year
+            type: string
+            required: false
+            desc: a year in YYYY format to search by a single year
+      returns: |
+        [Announcement](#alternateannouncement-entity) object
+      errors:
+        - status: 403
+          reason: not authenticated
+        - status: 404
+          reason: the ticker is not found
