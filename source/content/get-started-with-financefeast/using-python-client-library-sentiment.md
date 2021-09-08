@@ -16,10 +16,10 @@ graph up and test. In this tutorial we will pull stock sentiment and stock price
 * Graph
 
 
-### Get Your API Client Credentials
-[Credentials are here](https://customer.financefeast.io)
+### Get Your API Token
+[Credentials are here](https://customer.financefeast.io/#creds)
 
-Copy your client id and client secret. You will need to enter these into variables in the script
+Copy API authentication token. You will need to enter this into a parameter when creating an instance of Financefeast in the script
 
 ### Install the Financefeast python client library
 * Ensure you have [python 3.8](https://www.python.org/downloads/release/python-380) installed.
@@ -44,7 +44,7 @@ This imports the Financefeast client library and matplotlib for graphing.
 
 Now authenticate to the API
 ```python
-client = Rest(client_id="YOUR_CLIENT_ID", client_secret="YOUR_CLIENT_SECRET")
+client = Rest(token="YOUR API TOKEN")
 ```
 This should print a message like this:
 ```python
@@ -109,7 +109,7 @@ from datetime import datetime
 Pull the data from Financefeast
 NOTE: Remember to put in your client_id and client_secret
 """
-client = Rest(client_id="your_client_id", client_secret="your_client_secret")
+client = Rest(token="YOUR API TOKEN")
 sentiments = client.social_sentiment(ticker="air.nz", date_from="2021-06-01")
 price = client.eod(ticker='air.nz', date_from="2021-06-01")
 

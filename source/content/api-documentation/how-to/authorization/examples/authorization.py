@@ -1,6 +1,6 @@
 from financefeast import Rest
 
-client = Rest(token="your api token")
+client = Rest(token="API_TOKEN")
 print(client.validate())
 
 """
