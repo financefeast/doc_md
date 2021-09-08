@@ -3,9 +3,13 @@ title: Authorization
 weight: 14
 ---
 
-To authorize to protected endpoints you must pass an 'Bearer Authorization' http header containing a token that was recently 
-returned from a successful authenticate call. Tokens expire, therefore detecting "403 unauthorised" errors when using
-long running tasks is "best practice" to ensure expected application behaviour.
+To authorize to protected endpoints you must pass an 'Bearer Authorization' http header containing your API authentication token which
+can be obtained from your [API Dashboard]("https://customer.financefeast.io/#creds"). Tokens do not expire so care should be taken to
+ensure they are not leaked. You can regenerate or delete your tokens from your API Dashboard at any time. Paid subscription plans allow
+for multiple tokens.
+
+Tokens are 20 bit length keys prefixed with either `tk_` for test regions or `pk_` for production. You should ensure you pass the correct
+token to the correct region. They are not interchangeable and passing an incorrect token prefix will return a 403 Unauthorised.
 
 {{< safe-html >}}
 <br>
