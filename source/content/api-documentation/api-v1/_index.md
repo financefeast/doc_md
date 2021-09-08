@@ -28,12 +28,13 @@ Get in touch or read our guides on how you can develop your own Web application 
 
 ### Getting Your API Authentication Token
 
-Make a note of your `api token`. These can be found [here](https://customer.financefeast.io/#creds). 
+Make a note of your `api token`. These can be found [here](https://customer.financefeast.io/#creds). Paid plans allow for multiple token's to be issued which
+allows you to stop reusing tokens between applications which decreases the risk if a token gets exposed.
 
 ### To Authorize to Protected Endpoints
 
 To authorize to protected endpoints such as Core Data endpoints such as  End of Day or Intraday you will need to present an Authorization header with your api
-authentication code . 
+authentication token. 
 Calling a protected endpoint without providing a valid Authorization header will return a 403 Unauthorized error.
 
 [Authorization]({{< relref "./authorization.md" >}})
