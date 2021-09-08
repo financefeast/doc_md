@@ -4,7 +4,7 @@ weight: 14
 ---
 
 To authorize to protected endpoints you must pass an 'Bearer Authorization' http header containing your API authentication token which
-can be obtained from your [API Dashboard]("https://customer.financefeast.io/#creds"). Tokens do not expire so care should be taken to
+can be obtained from your [API Dashboard](https://customer.financefeast.io/#creds). Tokens do not expire so care should be taken to
 ensure they are not leaked. You can regenerate or delete your tokens from your API Dashboard at any time. Paid subscription plans allow
 for multiple tokens.
 

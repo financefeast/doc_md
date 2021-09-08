@@ -15,10 +15,10 @@ you how easy it is to pull data and visualize it.
 * Graph
 
 
-### Get Your API Client Credentials
-[Credentials are here](https://customer.financefeast.io)
+### Get Your API Token
+[Credentials are here](https://customer.financefeast.io/#creds)
 
-Copy your client id and client secret. You will need to enter these into variables in the script
+Copy API authentication token. You will need to enter this into a parameter when creating an instance of Financefeast in the script
 
 ### Install the Financefeast python client library
 * Ensure you have [python 3.8](https://www.python.org/downloads/release/python-380) installed.
@@ -43,7 +43,7 @@ This imports the Financefeast client library, pandas for data manipulation and m
 
 Now authenticate to the API
 ```python
-client = Rest(client_id="YOUR_CLIENT_ID", client_secret="YOUR_CLIENT_SECRET")
+client = Rest(token="YOUR API TOKEN")
 ```
 This should print a message like this:
 ```python
@@ -90,7 +90,7 @@ from financefeast import Rest, Environments
 import pandas as pd
 import matplotlib.pyplot as plt
 
-client = Rest(client_id="YOUR_CLIENT_ID", client_secret="YOUR_CLIENT_SECRET")
+client = Rest(token="YOUR API TOKEN")
 result = client.eod(ticker='air.nz', date_from="2021-01-01")
 df = pd.DataFrame(result.data)
 df['date'] = pd.to_datetime(df['timestamp'])

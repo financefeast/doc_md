@@ -10,7 +10,7 @@ Want to get stock data with Financefeast, but you aren’t fully sure how the Fi
 ## This tutorial explains how to:
 * Install Postman
 * Get our Financefeast postman collection
-* Find your API client credentials
+* Find your API token
 * Configure the Postman collection
 * Authenticate to the Financefeast API  
 * Get stock data through API
@@ -26,14 +26,14 @@ We recommend the stand alone version of Postman, rather than the Chrome browser 
 git clone https://github.com/financefeast/postman_collections.git
 ```
 
-### Get Your API Client Credentials
-[Credentials are here](https://customer.financefeast.io)
+### Get Your API Token
+[Credentials are here](https://customer.financefeast.io/#creds)
 
-Copy your client id and client secret. You will need to enter these into environment variables in the postman collection
+Copy your API token. You will need to enter these into environment variable in the postman collection
 
 ### Configure Postman
 Under "Environments", select "Prod" and you should see a list of variables. 
-Enter your client id into CLIENT_ID and your client secret into CLIENT_SECRET.
+Enter your API token into the TOKEN value field.
 
 {{< safe-html >}}
 <center><img src="./environment.png" width="80%"></center>
@@ -41,17 +41,8 @@ Enter your client id into CLIENT_ID and your client secret into CLIENT_SECRET.
 
 {{< note >}} Make sure the 'Environment' is set to 'Prod' {{< /note >}}
 
-### Authenticate
-Under "Collections", run "Login" which will attempt to authenticate your client credentials. 
-If successful you will see a Bearer token. This will automatically be saved as an environment 
-variable "TOKEN" and used to authenticate all other requests to end points.
-
-{{< safe-html >}}
-<center><img src="./login.png" width="80%"></center>
-{{< /safe-html >}}
-
 ### Get Stock Data
-Once you are authenticated, under "Collections", run "EOD". You should see data for the pre-defined ticker. 
+Once you have entered your TOKEN into the TOKEN environment variable, under "Collections", run "EOD". You should see data for the pre-defined ticker. 
 You can change the ticker, and the date by changing the query params.
 
 {{< safe-html >}}

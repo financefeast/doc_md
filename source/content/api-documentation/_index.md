@@ -5,9 +5,9 @@ weight: 5
 
 # API Documentation
 
-In order to start using Financefeast Web API, you will need to obtain your API `client id` and `client secret`. These can
-be obtained from your API dashboard [here](https://customer.financefeast.io). From the dashboard you can re-roll your client
-secret at any time if you need.
+In order to start using Financefeast Web API, you will need to obtain your API `token`. This can
+be obtained from your API dashboard [here](https://customer.financefeast.io/#creds). From the dashboard you can regenerate or delete your
+API authenticaton token at any time. Paid subscription plans allow for multiple tokens.
 
 ### [Web API v1]({{< relref "/api-documentation/api-v1/_index.md" >}})
  
