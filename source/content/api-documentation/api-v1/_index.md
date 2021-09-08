@@ -15,26 +15,27 @@ Once you have signed up and have familiarized yourself with our API, please
 check out our [python client](https://github.com/financefeast/python_client)
 to begin integration with your own project.
 
-## Authorization and Authentication
+## Authorization
 
-Financefeast API uses the oauth2 authorization protocol and requires an initial authorization step to receive an authorization code. 
-The authorization code is then presented to all protected endpoints and is then authorized. 
-If the authorization code is valid access is granted, otherwise a 401 Unauthorized error is returned.
+### API
+Financefeast API uses 20 bit authentication tokens that do not expire. The authentication token is then presented to all protected endpoints and is then authorized. 
+If the authentication code is valid, access is granted, otherwise a 403 Unauthorized error is returned.
 
-Oauth2 authorization protocol allows flexibility to developers writing applications that consume the Financefeast API. 
+### Integrated Applications
+Financefeast API also allows Oauth2 authorization protocol that allows flexibility to developers writing applications that consume the Financefeast API. 
 With oauth2 we can authorize customers in your behalf to access the API using their credentials which opens up many possibilities. 
 Get in touch or read our guides on how you can develop your own Web application that uses oauth2 to authorize Finacefeast customers.
 
-### To Authenticate and Get an Authorization Code
+### Getting Your API Authentication Token
 
-First make a note of your `client id` and `client secret`. These can be found [here](https://customer.financefeast.io). 
-
-[Authentication]({{< relref "./authentication.md" >}})
+Make a note of your `api token`. These can be found [here](https://customer.financefeast.io/#creds). Paid plans allow for multiple token's to be issued which
+allows you to stop reusing tokens between applications which decreases the risk if a token gets exposed.
 
 ### To Authorize to Protected Endpoints
 
-To authorize to protected endpoints such as Core Data: End of Day or Intraday you will need to present an Authorization header with your authorization code . 
-Calling a protected endpoint without providing a valid Authorization header will return a 401 Unauthorized error.
+To authorize to protected endpoints such as Core Data endpoints such as  End of Day or Intraday you will need to present an Authorization header with your api
+authentication token. 
+Calling a protected endpoint without providing a valid Authorization header will return a 403 Unauthorized error.
 
 [Authorization]({{< relref "./authorization.md" >}})
 
