@@ -11,7 +11,8 @@ will get a list of all the authenticated endpoints you have called for the date 
 <br>
 {{< /safe-html >}}
 
-The list will contain each endpoint called along with a data field containing each day and a count for that day.
+The list will contain each endpoint called along with a data field containing each day and a count for that day. Token id will
+also be returned along with counts per day.
 
 {{< code-example exampleId="account-usage" pathURL="/api-documentation/how-to/account-usage/examples">}}
 
