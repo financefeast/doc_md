@@ -16,29 +16,57 @@ spec:
     desc: |
       Number of milliseconds in server processing time
   - name: data
-    type: list
+    type: dict
     desc: |
-      A list of urls and counts by day
+      A list of urls and token id's with counts by day
 example: |
   {
-    "date_from": "2021-04-02T20:04:31.511583",
-    "date_to": "2021-05-02T20:04:31.511584",
-    "hits": 1,
-    "took_ms": 29,
-    "data": [
-      {
-        "path": "/account/usage",
-        "count": 24,
-        "days": [
-          {
-            "date": "2021-05-02T00:00:00.000Z",
-            "count": 19
-          },
-          {
-            "date": "2021-05-03T00:00:00.000Z",
-            "count": 5
-          }
-        ]
-      }
-    ]
+    "date_from": "2021-08-10T09:58:21.857931",
+    "date_to": "2021-09-10T09:58:21.857932",
+    "hits": 3,
+    "took_ms": 20,
+    "data": {
+      "path": [
+        {
+          "path": "/alternate/announcement",
+          "count": 5,
+          "days": [
+            {
+              "date": "2021-09-01T00:00:00.000Z",
+              "count": 1
+            },
+            {
+              "date": "2021-09-02T00:00:00.000Z",
+              "count": 3
+            },
+            {
+              "date": "2021-09-03T00:00:00.000Z",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "path": "/financial/income",
+          "count": 1,
+          "days": [
+            {
+              "date": "2021-09-01T00:00:00.000Z",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "token": [
+        {
+          "token": "1",
+          "count": 2,
+          "days": [
+            {
+              "date": "2021-09-10T00:00:00.000Z",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    }
   }
