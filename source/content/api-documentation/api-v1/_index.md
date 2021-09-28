@@ -8,7 +8,7 @@ API allows easy retrieval of 20 minute delayed and real-time price and other fin
 financial records like cashflow and balance sheet data. Alternate data is also available for social media posts and
 company announcements.
 
-In order to start data retrieval with financefeast API, please sign up
+In order to start data retrieval with Financefeast API, please sign up
 [here](https://identity.financefeast.io/account/signup).
 
 Once you have signed up and have familiarized yourself with our API, please
