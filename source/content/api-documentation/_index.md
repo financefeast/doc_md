@@ -13,6 +13,12 @@ API authenticaton token at any time. Paid subscription plans allow for multiple 
  
 Current version of the Financefeast API is [`v1`]
 
+### [Stream API v1]({{< relref "/api-documentation/stream-v1/_index.md" >}})
+ 
+Current version of the Financefeast Stream API is [`v1`]
+
+
+
 ### [How-To Code Examples]({{< relref "/api-documentation/how-to/_index.md" >}})
 
 Basic usage examples showing [how to do specific tasks]({{< relref "/api-documentation/how-to/_index.md" >}}) 
