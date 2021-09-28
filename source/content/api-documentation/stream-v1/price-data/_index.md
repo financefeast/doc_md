@@ -52,6 +52,9 @@ All symbols will be sent to your client when received from the exchange. There i
 
 All data sent from the stream API is in JSON format.
 
+## Logoff
+To logoff from the stream API simply drop the connection. 
+
 ## Errors
 
 ### No Stream Access
