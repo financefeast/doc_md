@@ -134,6 +134,9 @@ pre.entity li {
 .rest-entity-example {
     font-size: 80%;
 }
+.stream-entity-example {
+    font-size: 80%;
+}
 .rest-http {
     background-color: #f2f2f2;
     padding: 0.2em 5px;
@@ -160,6 +163,21 @@ pre.entity li {
 }
 .http-error .reason {
     width: 70%;
+}
+
+.stream-http {
+    background-color: #9fc6ec;
+    padding: 0.2em 5px;
+    margin: 0.5em 0;
+    font-family: "PT Mono", monospace;
+}
+.stream-http span.method {
+    margin-right: 15px;
+    display: inline-block;
+    font-weight: bold;
+}
+.stream-endpoint .summary {
+    margin-bottom: 25px;
 }
 
 .suggestions {
