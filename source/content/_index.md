@@ -33,5 +33,5 @@ We have plenty of python examples to get you started coded in python. From simpl
 
 ## Help and Support
 
-Need help? Can find what your looking for here? Post a message on [community slack](https://financefeast.slack.com) and one of the Financefeast
+Need help? Can find what your looking for here? Post a message on [community forum](https://forum.financefeast.io) and one of the Financefeast
 team or the community will help you.
